@@ -25,6 +25,9 @@
 
     <!-- Optional Plugins-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+
+    <!-- SweetAlert -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/7.33.1/sweetalert2.min.css">
 </head>
 
 <body>
@@ -214,7 +217,7 @@
         </div>
     </section>
     <!-- End Services -->
-    <section class="products-grids trending pb-4">
+    <section class="products-grid trending pb-4">
         <div class="container">
             <div class="row">
                 <div class="col-12">
@@ -239,7 +242,7 @@
                             <div class="d-flex product-button">
                                 <a href="#" class=" demo"><span><i class="fa fa-desktop"></i> Demo</span></a>
                                 <a href="#" class=" download"><span><i class="fa fa-download"></i> Download</span></a>
-                                <a href="#" class=" buy"><span><i class="fa fa-shopping-cart"></i> Buy</span></a>
+                                <a href="#" class=" buy" onclick="checkOut()"><span><i class="fa fa-shopping-cart"></i> Buy</span></a>
                             </div>
                         </div>
                     </div>
@@ -259,7 +262,7 @@
                             <div class="d-flex product-button">
                                 <a href="#" class=" demo"><span><i class="fa fa-desktop"></i> Demo</span></a>
                                 <a href="#" class=" download"><span><i class="fa fa-download"></i> Download</span></a>
-                                <a href="#" class=" buy"><span><i class="fa fa-shopping-cart"></i> Buy</span></a>
+                                <a href="#" class=" buy" onclick="checkOut()"><span><i class="fa fa-shopping-cart"></i> Buy</span></a>
                             </div>
                         </div>
                     </div>
@@ -279,7 +282,7 @@
                             <div class="d-flex product-button">
                                 <a href="#" class=" demo"><span><i class="fa fa-desktop"></i> Demo</span></a>
                                 <a href="#" class=" download"><span><i class="fa fa-download"></i> Download</span></a>
-                                <a href="#" class=" buy"><span><i class="fa fa-shopping-cart"></i> Buy</span></a>
+                                <a href="#" class=" buy" onclick="checkOut()"><span><i class="fa fa-shopping-cart"></i> Buy</span></a>
                             </div>
                         </div>
                     </div>
@@ -299,7 +302,7 @@
                             <div class="d-flex product-button">
                                 <a href="#" class=" demo"><span><i class="fa fa-desktop"></i> Demo</span></a>
                                 <a href="#" class=" download"><span><i class="fa fa-download"></i> Download</span></a>
-                                <a href="#" class=" buy"><span><i class="fa fa-shopping-cart"></i> Buy</span></a>
+                                <a href="#" class=" buy" onclick="checkOut()"><span><i class="fa fa-shopping-cart"></i> Buy</span></a>
                             </div>
                         </div>
                     </div>
@@ -319,7 +322,7 @@
                             <div class="d-flex product-button">
                                 <a href="#" class=" demo"><span><i class="fa fa-desktop"></i> Demo</span></a>
                                 <a href="#" class=" download"><span><i class="fa fa-download"></i> Download</span></a>
-                                <a href="#" class=" buy"><span><i class="fa fa-shopping-cart"></i> Buy</span></a>
+                                <a href="#" class=" buy" onclick="checkOut()"><span><i class="fa fa-shopping-cart"></i> Buy</span></a>
                             </div>
                         </div>
                     </div>
@@ -339,7 +342,7 @@
                             <div class="d-flex product-button">
                                 <a href="#" class=" demo"><span><i class="fa fa-desktop"></i> Demo</span></a>
                                 <a href="#" class=" download"><span><i class="fa fa-download"></i> Download</span></a>
-                                <a href="#" class=" buy"><span><i class="fa fa-shopping-cart"></i> Buy</span></a>
+                                <a href="#" class=" buy" onclick="checkOut()"><span><i class="fa fa-shopping-cart"></i> Buy</span></a>
                             </div>
                         </div>
                     </div>
@@ -472,6 +475,17 @@
 
     <!-- Main JS-->
     <script src="./assets/js/main.js"></script>
+
+    <!-- SweetAlert -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/7.33.1/sweetalert2.min.js"></script>
+
+    <script>
+        function checkOut() {
+            swal("Good job!", "You clicked the button!", "success").then(() => {
+                location.href = 'cart.html'
+            })
+        }
+    </script>
 </body>
 
 </html>
