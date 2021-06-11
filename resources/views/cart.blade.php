@@ -8,7 +8,9 @@
     <title>IndoMarket - Free E-Commerce Website Template built with Boostrap 4 and Argon Design System</title>
 
     <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Poppins:200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css?family=Poppins:200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap"
+        rel="stylesheet">
 
     <!-- Icons -->
     <link href="./assets/css/nucleo-icons.css" rel="stylesheet">
@@ -51,7 +53,7 @@
             <div class="container">
                 <div class="row align-items-center">
                     <div class="col-lg-3 col-12 col-sm-6">
-                        <a class="navbar-brand mr-lg-5" href="./index.html">
+                        <a class="navbar-brand mr-lg-5" href="./">
                             <i class="fa fa-shopping-bag fa-3x"></i> <span class="logo">TukuO</span>
                         </a>
                     </div>
@@ -74,7 +76,7 @@
                                 <span class="badge badge-default">5</span>
                             </div>
                             <div class="single-icon shopping-cart">
-                                <a href="cart.html"><i class="fa fa-shopping-cart fa-2x"></i></a>
+                                <a href="cart"><i class="fa fa-shopping-cart fa-2x"></i></a>
                                 <span class="badge badge-default">4</span>
                             </div>
                         </div>
@@ -85,25 +87,27 @@
         <nav class="navbar navbar-main navbar-expand-lg navbar-light border-top border-bottom">
             <div class="container">
 
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main_nav" aria-controls="main_nav" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main_nav"
+                    aria-controls="main_nav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
                 <div class="collapse navbar-collapse" id="main_nav">
                     <ul class="navbar-nav">
                         <li class="nav-item dropdown">
-                            <a class="nav-link" href="index.html">Home</a>
+                            <a class="nav-link" href="./">Home</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">About</a>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" aria-expanded="true">Pages</a>
+                            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#"
+                                aria-expanded="true">Pages</a>
                             <div class="dropdown-menu">
-                                <a class="dropdown-item" href="products.html">Products</a>
-                                <a class="dropdown-item" href="product-detail.html">Product Detail</a>
-                                <a class="dropdown-item" href="cart.html">Cart</a>
-                                <a class="dropdown-item" href="checkout.html">Checkout</a>
+                                <a class="dropdown-item" href="products">Products</a>
+                                <a class="dropdown-item" href="product-detail">Product Detail</a>
+                                <a class="dropdown-item" href="cart">Cart</a>
+                                <a class="dropdown-item" href="checkout">Checkout</a>
                             </div>
                         </li>
                     </ul>
@@ -119,7 +123,7 @@
     <section class="breadcrumb-section pb-3 pt-3">
         <div class="container">
             <ol class="breadcrumb">
-                <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                <li class="breadcrumb-item"><a href="./">Home</a></li>
                 <li class="breadcrumb-item active" aria-current="page">Cart</li>
             </ol>
         </div>

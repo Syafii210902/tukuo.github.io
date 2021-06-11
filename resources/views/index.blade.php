@@ -8,7 +8,9 @@
     <title>IndoMarket - Free E-Commerce Website Template built with Boostrap 4 and Argon Design System</title>
 
     <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Poppins:200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css?family=Poppins:200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap"
+        rel="stylesheet">
 
     <!-- Icons -->
     <link href="./assets/css/nucleo-icons.css" rel="stylesheet">
@@ -54,7 +56,7 @@
             <div class="container">
                 <div class="row align-items-center">
                     <div class="col-lg-3 col-12 col-sm-6">
-                        <a class="navbar-brand mr-lg-5" href="./index.html">
+                        <a class="navbar-brand mr-lg-5" href="./">
                             <i class="fa fa-shopping-bag fa-3x"></i> <span class="logo">TukuO</span>
                         </a>
                     </div>
@@ -77,7 +79,7 @@
                                 <span class="badge badge-default">5</span>
                             </div>
                             <div class="single-icon shopping-cart">
-                                <a href="cart.html"><i class="fa fa-shopping-cart fa-2x"></i></a>
+                                <a href="cart"><i class="fa fa-shopping-cart fa-2x"></i></a>
                                 <span class="badge badge-default">4</span>
                             </div>
                         </div>
@@ -88,7 +90,8 @@
         <nav class="navbar navbar-main navbar-expand-lg navbar-light border-top border-bottom">
             <div class="container">
 
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main_nav" aria-controls="main_nav" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main_nav"
+                    aria-controls="main_nav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
@@ -101,12 +104,13 @@
                             <a class="nav-link" href="#">About</a>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" aria-expanded="true">Pages</a>
+                            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#"
+                                aria-expanded="true">Pages</a>
                             <div class="dropdown-menu">
-                                <a class="dropdown-item" href="products.html">Products</a>
-                                <a class="dropdown-item" href="product-detail.html">Product Detail</a>
-                                <a class="dropdown-item" href="cart.html">Cart</a>
-                                <a class="dropdown-item" href="checkout.html">Checkout</a>
+                                <a class="dropdown-item" href="products">Products</a>
+                                <a class="dropdown-item" href="product-detail">Product Detail</a>
+                                <a class="dropdown-item" href="cart">Cart</a>
+                                <a class="dropdown-item" href="checkout">Checkout</a>
                             </div>
                         </li>
                     </ul>
@@ -230,19 +234,22 @@
                 <div class="col-lg-4 col-md-6 col-12">
                     <div class="single-product">
                         <div class="product-img">
-                            <a href="product-detail.html">
+                            <a href="./product-detail">
                                 <img src="./assets/img/products/p5.png" class="img-fluid" />
                             </a>
                         </div>
                         <div class="product-content">
-                            <h3><a href="product-detail.html">FlexStart</a></h3>
+                            <h3><a href="./product-detail">FlexStart</a></h3>
                             <div class="product-desc">
-                                <span>FlexStart is a creative and modern Bootstrap website template. FlexStart is created for individuals and companies who want to build websites for software, startup, mobile app, digital</span>
+                                <span>FlexStart is a creative and modern Bootstrap website template. FlexStart is
+                                    created for individuals and companies who want to build websites for software,
+                                    startup, mobile app, digital</span>
                             </div>
                             <div class="d-flex product-button">
                                 <a href="#" class=" demo"><span><i class="fa fa-desktop"></i> Demo</span></a>
                                 <a href="#" class=" download"><span><i class="fa fa-download"></i> Download</span></a>
-                                <a href="#" class=" buy" onclick="checkOut()"><span><i class="fa fa-shopping-cart"></i> Buy</span></a>
+                                <a href="#" class=" buy" onclick="checkOut()"><span><i class="fa fa-shopping-cart"></i>
+                                        Buy</span></a>
                             </div>
                         </div>
                     </div>
@@ -250,19 +257,22 @@
                 <div class="col-lg-4 col-md-6 col-12">
                     <div class="single-product">
                         <div class="product-img">
-                            <a href="product-detail.html">
+                            <a href="./product-detail">
                                 <img src="./assets/img/products/p5.png" class="img-fluid" />
                             </a>
                         </div>
                         <div class="product-content">
-                            <h3><a href="product-detail.html">FlexStart</a></h3>
+                            <h3><a href="./product-detail">FlexStart</a></h3>
                             <div class="product-desc">
-                                <span>FlexStart is a creative and modern Bootstrap website template. FlexStart is created for individuals and companies who want to build websites for software, startup, mobile app, digital</span>
+                                <span>FlexStart is a creative and modern Bootstrap website template. FlexStart is
+                                    created for individuals and companies who want to build websites for software,
+                                    startup, mobile app, digital</span>
                             </div>
                             <div class="d-flex product-button">
                                 <a href="#" class=" demo"><span><i class="fa fa-desktop"></i> Demo</span></a>
                                 <a href="#" class=" download"><span><i class="fa fa-download"></i> Download</span></a>
-                                <a href="#" class=" buy" onclick="checkOut()"><span><i class="fa fa-shopping-cart"></i> Buy</span></a>
+                                <a href="#" class=" buy" onclick="checkOut()"><span><i class="fa fa-shopping-cart"></i>
+                                        Buy</span></a>
                             </div>
                         </div>
                     </div>
@@ -270,19 +280,22 @@
                 <div class="col-lg-4 col-md-6 col-12">
                     <div class="single-product">
                         <div class="product-img">
-                            <a href="product-detail.html">
+                            <a href="./product-detail">
                                 <img src="./assets/img/products/p5.png" class="img-fluid" />
                             </a>
                         </div>
                         <div class="product-content">
-                            <h3><a href="product-detail.html">FlexStart</a></h3>
+                            <h3><a href="./product-detail">FlexStart</a></h3>
                             <div class="product-desc">
-                                <span>FlexStart is a creative and modern Bootstrap website template. FlexStart is created for individuals and companies who want to build websites for software, startup, mobile app, digital</span>
+                                <span>FlexStart is a creative and modern Bootstrap website template. FlexStart is
+                                    created for individuals and companies who want to build websites for software,
+                                    startup, mobile app, digital</span>
                             </div>
                             <div class="d-flex product-button">
                                 <a href="#" class=" demo"><span><i class="fa fa-desktop"></i> Demo</span></a>
                                 <a href="#" class=" download"><span><i class="fa fa-download"></i> Download</span></a>
-                                <a href="#" class=" buy" onclick="checkOut()"><span><i class="fa fa-shopping-cart"></i> Buy</span></a>
+                                <a href="#" class=" buy" onclick="checkOut()"><span><i class="fa fa-shopping-cart"></i>
+                                        Buy</span></a>
                             </div>
                         </div>
                     </div>
@@ -290,19 +303,22 @@
                 <div class="col-lg-4 col-md-6 col-12">
                     <div class="single-product">
                         <div class="product-img">
-                            <a href="product-detail.html">
+                            <a href="./product-detail">
                                 <img src="./assets/img/products/p5.png" class="img-fluid" />
                             </a>
                         </div>
                         <div class="product-content">
-                            <h3><a href="product-detail.html">FlexStart</a></h3>
+                            <h3><a href="./product-detail">FlexStart</a></h3>
                             <div class="product-desc">
-                                <span>FlexStart is a creative and modern Bootstrap website template. FlexStart is created for individuals and companies who want to build websites for software, startup, mobile app, digital</span>
+                                <span>FlexStart is a creative and modern Bootstrap website template. FlexStart is
+                                    created for individuals and companies who want to build websites for software,
+                                    startup, mobile app, digital</span>
                             </div>
                             <div class="d-flex product-button">
                                 <a href="#" class=" demo"><span><i class="fa fa-desktop"></i> Demo</span></a>
                                 <a href="#" class=" download"><span><i class="fa fa-download"></i> Download</span></a>
-                                <a href="#" class=" buy" onclick="checkOut()"><span><i class="fa fa-shopping-cart"></i> Buy</span></a>
+                                <a href="#" class=" buy" onclick="checkOut()"><span><i class="fa fa-shopping-cart"></i>
+                                        Buy</span></a>
                             </div>
                         </div>
                     </div>
@@ -310,19 +326,22 @@
                 <div class="col-lg-4 col-md-6 col-12">
                     <div class="single-product">
                         <div class="product-img">
-                            <a href="product-detail.html">
+                            <a href="./product-detail">
                                 <img src="./assets/img/products/p5.png" class="img-fluid" />
                             </a>
                         </div>
                         <div class="product-content">
-                            <h3><a href="product-detail.html">FlexStart</a></h3>
+                            <h3><a href="./product-detail">FlexStart</a></h3>
                             <div class="product-desc">
-                                <span>FlexStart is a creative and modern Bootstrap website template. FlexStart is created for individuals and companies who want to build websites for software, startup, mobile app, digital</span>
+                                <span>FlexStart is a creative and modern Bootstrap website template. FlexStart is
+                                    created for individuals and companies who want to build websites for software,
+                                    startup, mobile app, digital</span>
                             </div>
                             <div class="d-flex product-button">
                                 <a href="#" class=" demo"><span><i class="fa fa-desktop"></i> Demo</span></a>
                                 <a href="#" class=" download"><span><i class="fa fa-download"></i> Download</span></a>
-                                <a href="#" class=" buy" onclick="checkOut()"><span><i class="fa fa-shopping-cart"></i> Buy</span></a>
+                                <a href="#" class=" buy" onclick="checkOut()"><span><i class="fa fa-shopping-cart"></i>
+                                        Buy</span></a>
                             </div>
                         </div>
                     </div>
@@ -330,19 +349,22 @@
                 <div class="col-lg-4 col-md-6 col-12">
                     <div class="single-product">
                         <div class="product-img">
-                            <a href="product-detail.html">
+                            <a href="./product-detail">
                                 <img src="./assets/img/products/p5.png" class="img-fluid" />
                             </a>
                         </div>
                         <div class="product-content">
-                            <h3><a href="product-detail.html">FlexStart</a></h3>
+                            <h3><a href="./product-detail">FlexStart</a></h3>
                             <div class="product-desc">
-                                <span>FlexStart is a creative and modern Bootstrap website template. FlexStart is created for individuals and companies who want to build websites for software, startup, mobile app, digital</span>
+                                <span>FlexStart is a creative and modern Bootstrap website template. FlexStart is
+                                    created for individuals and companies who want to build websites for software,
+                                    startup, mobile app, digital</span>
                             </div>
                             <div class="d-flex product-button">
                                 <a href="#" class=" demo"><span><i class="fa fa-desktop"></i> Demo</span></a>
                                 <a href="#" class=" download"><span><i class="fa fa-download"></i> Download</span></a>
-                                <a href="#" class=" buy" onclick="checkOut()"><span><i class="fa fa-shopping-cart"></i> Buy</span></a>
+                                <a href="#" class=" buy" onclick="checkOut()"><span><i class="fa fa-shopping-cart"></i>
+                                        Buy</span></a>
                             </div>
                         </div>
                     </div>
@@ -376,7 +398,9 @@
                             <div class="logo-footer">
                                 <i class="fa fa-shopping-bag fa-3x"></i> <span class="logo">TukuO</span>
                             </div>
-                            <p class="text">Praesent dapibus, neque id cursus ucibus, tortor neque egestas augue, magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus.</p>
+                            <p class="text">Praesent dapibus, neque id cursus ucibus, tortor neque egestas augue, magna
+                                eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor,
+                                facilisis luctus, metus.</p>
                             <p class="call">Got Question? Call us 24/7<span><a href="tel:123456789">+0123 456
                                         789</a></span></p>
                         </div>
@@ -442,7 +466,8 @@
                     <div class="row">
                         <div class="col-lg-6 col-12">
                             <div class="left">
-                                <p>Copyright © 2021 <a href="http://indokoding.net" target="_blank">IndoKoding.net</a> - All Rights Reserved.</p>
+                                <p>Copyright © 2021 <a href="http://indokoding.net" target="_blank">IndoKoding.net</a> -
+                                    All Rights Reserved.</p>
                             </div>
                         </div>
                         <div class="col-lg-6 col-12">
@@ -482,9 +507,10 @@
     <script>
         function checkOut() {
             swal("Good job!", "You clicked the button!", "success").then(() => {
-                location.href = 'cart.html'
+                location.href = 'cart'
             })
         }
+
     </script>
 </body>
 

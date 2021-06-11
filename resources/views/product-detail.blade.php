@@ -8,7 +8,9 @@
     <title>IndoMarket - Free E-Commerce Website Template built with Boostrap 4 and Argon Design System</title>
 
     <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Poppins:200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css?family=Poppins:200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap"
+        rel="stylesheet">
 
     <!-- Icons -->
     <link href="./assets/css/nucleo-icons.css" rel="stylesheet">
@@ -54,7 +56,7 @@
             <div class="container">
                 <div class="row align-items-center">
                     <div class="col-lg-3 col-12 col-sm-6">
-                        <a class="navbar-brand mr-lg-5" href="./index.html">
+                        <a class="navbar-brand mr-lg-5" href="./">
                             <i class="fa fa-shopping-bag fa-3x"></i> <span class="logo">TukuO</span>
                         </a>
                     </div>
@@ -77,7 +79,7 @@
                                 <span class="badge badge-default">5</span>
                             </div>
                             <div class="single-icon shopping-cart">
-                                <a href="cart.html"><i class="fa fa-shopping-cart fa-2x"></i></a>
+                                <a href="cart"><i class="fa fa-shopping-cart fa-2x"></i></a>
                                 <span class="badge badge-default">4</span>
                             </div>
                         </div>
@@ -88,25 +90,27 @@
         <nav class="navbar navbar-main navbar-expand-lg navbar-light border-top border-bottom">
             <div class="container">
 
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main_nav" aria-controls="main_nav" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main_nav"
+                    aria-controls="main_nav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
                 <div class="collapse navbar-collapse" id="main_nav">
                     <ul class="navbar-nav">
                         <li class="nav-item dropdown">
-                            <a class="nav-link" href="index.html">Home</a>
+                            <a class="nav-link" href="./">Home</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">About</a>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" aria-expanded="true">Pages</a>
+                            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#"
+                                aria-expanded="true">Pages</a>
                             <div class="dropdown-menu">
-                                <a class="dropdown-item" href="products.html">Products</a>
-                                <a class="dropdown-item" href="product-detail.html">Product Detail</a>
-                                <a class="dropdown-item" href="cart.html">Cart</a>
-                                <a class="dropdown-item" href="checkout.html">Checkout</a>
+                                <a class="dropdown-item" href="products">Products</a>
+                                <a class="dropdown-item" href="product-detail">Product Detail</a>
+                                <a class="dropdown-item" href="cart">Cart</a>
+                                <a class="dropdown-item" href="checkout">Checkout</a>
                             </div>
                         </li>
                     </ul>
@@ -135,27 +139,35 @@
                     <div id="product-images" class="carousel slide" data-ride="carousel">
                         <!-- slides -->
                         <div class="carousel-inner">
-                            <div class="carousel-item active"> <img src="assets/img/products/p5.png" alt="Product 1"> </div>
+                            <div class="carousel-item active"> <img src="assets/img/products/p5.png" alt="Product 1">
+                            </div>
                             <div class="carousel-item"> <img src="assets/img/products/p5.png" alt="Product 2"> </div>
                             <div class="carousel-item"> <img src="assets/img/products/p5.png" alt="Product 3"> </div>
                             <div class="carousel-item"> <img src="assets/img/products/p5.png" alt="Product 4"> </div>
                         </div>
                         <!-- Left right -->
-                        <a class="carousel-control-prev" href="#product-images" data-slide="prev"> <span class="carousel-control-prev-icon"></span> </a>
-                        <a class="carousel-control-next" href="#product-images" data-slide="next"> <span class="carousel-control-next-icon"></span> </a>
+                        <a class="carousel-control-prev" href="#product-images" data-slide="prev"> <span
+                                class="carousel-control-prev-icon"></span> </a>
+                        <a class="carousel-control-next" href="#product-images" data-slide="next"> <span
+                                class="carousel-control-next-icon"></span> </a>
                         <!-- Thumbnails -->
                         <ol class="carousel-indicators list-inline">
                             <li class="list-inline-item active">
-                                <a id="carousel-selector-0" class="selected" data-slide-to="0" data-target="#product-images"> <img src="assets/img/products/p5.png" class="img-fluid"> </a>
+                                <a id="carousel-selector-0" class="selected" data-slide-to="0"
+                                    data-target="#product-images"> <img src="assets/img/products/p5.png"
+                                        class="img-fluid"> </a>
                             </li>
                             <li class="list-inline-item">
-                                <a id="carousel-selector-1" data-slide-to="1" data-target="#product-images"> <img src="assets/img/products/p5.png" class="img-fluid"> </a>
+                                <a id="carousel-selector-1" data-slide-to="1" data-target="#product-images"> <img
+                                        src="assets/img/products/p5.png" class="img-fluid"> </a>
                             </li>
                             <li class="list-inline-item">
-                                <a id="carousel-selector-2" data-slide-to="2" data-target="#product-images"> <img src="assets/img/products/p5.png" class="img-fluid"> </a>
+                                <a id="carousel-selector-2" data-slide-to="2" data-target="#product-images"> <img
+                                        src="assets/img/products/p5.png" class="img-fluid"> </a>
                             </li>
                             <li class="list-inline-item">
-                                <a id="carousel-selector-3" data-slide-to="3" data-target="#product-images"> <img src="assets/img/products/p5.png" class="img-fluid"> </a>
+                                <a id="carousel-selector-3" data-slide-to="3" data-target="#product-images"> <img
+                                        src="assets/img/products/p5.png" class="img-fluid"> </a>
                             </li>
                         </ol>
                     </div>
@@ -164,7 +176,8 @@
                     <div class="single-sidebar">
                         <div class="single-buttons">
                             <a href="#" class="demo"><span><i class="fa fa-desktop"></i> Demo</span></a>
-                            <a href="#" class="download" onclick="checkOut()"><span><i class="fa fa-download"></i> Download</span></a>
+                            <a href="#" class="download" onclick="checkOut()"><span><i class="fa fa-download"></i>
+                                    Download</span></a>
                         </div>
                         <div class="version-details">
                             <div class="row">
@@ -182,8 +195,12 @@
                                         <li><strong>Downloads</strong><span>38,343</span></li>
                                         <li><strong>Last Update</strong><span>Jun 01, 2021</span></li>
                                         <li><strong>Created</strong><span>Jun 23, 2020</span></li>
-                                        <li><strong>Changelog</strong><span><a href="https://bootstrapmade.com/demo/templates/BizLand/changelog.txt" target="_blank" rel="nofollow">View changelog</a></span></li>
-                                        <li><strong>License</strong><span><a href="https://bootstrapmade.com/license/">Licensing information</a></span></li>
+                                        <li><strong>Changelog</strong><span><a
+                                                    href="https://bootstrapmade.com/demo/templates/BizLand/changelog.txt"
+                                                    target="_blank" rel="nofollow">View changelog</a></span></li>
+                                        <li><strong>License</strong><span><a
+                                                    href="https://bootstrapmade.com/license/">Licensing
+                                                    information</a></span></li>
                                     </ul>
                                 </div>
                             </div>
@@ -195,27 +212,42 @@
                 <div class="col-12">
                     <div class="product-details">
                         <div class="nav-wrapper">
-                            <ul class="nav nav-pills nav-fill flex-column flex-md-row" id="tabs-icons-text" role="tablist">
+                            <ul class="nav nav-pills nav-fill flex-column flex-md-row" id="tabs-icons-text"
+                                role="tablist">
                                 <li class="nav-item">
-                                    <a class="nav-link mb-sm-3 mb-md-0 active" id="tabs-icons-text-1-tab" data-toggle="tab" href="#tabs-icons-text-1" role="tab" aria-controls="tabs-icons-text-1" aria-selected="true">Description</a>
+                                    <a class="nav-link mb-sm-3 mb-md-0 active" id="tabs-icons-text-1-tab"
+                                        data-toggle="tab" href="#tabs-icons-text-1" role="tab"
+                                        aria-controls="tabs-icons-text-1" aria-selected="true">Description</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link mb-sm-3 mb-md-0" id="tabs-icons-text-2-tab" data-toggle="tab" href="#tabs-icons-text-2" role="tab" aria-controls="tabs-icons-text-2" aria-selected="false">Reviews</a>
+                                    <a class="nav-link mb-sm-3 mb-md-0" id="tabs-icons-text-2-tab" data-toggle="tab"
+                                        href="#tabs-icons-text-2" role="tab" aria-controls="tabs-icons-text-2"
+                                        aria-selected="false">Reviews</a>
                                 </li>
                             </ul>
                         </div>
                         <div class="card">
                             <div class="card-body">
                                 <div class="tab-content" id="myTabContent">
-                                    <div class="tab-pane fade show active" id="tabs-icons-text-1" role="tabpanel" aria-labelledby="tabs-icons-text-1-tab">
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                                            commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
+                                    <div class="tab-pane fade show active" id="tabs-icons-text-1" role="tabpanel"
+                                        aria-labelledby="tabs-icons-text-1-tab">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                                            commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
+                                            esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                                            cupidatat non proident, sunt in culpa qui officia deserunt mollit
                                             anim id est laborum.</p>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                                            commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                                            commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
+                                            esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                                            cupidatat non proident, sunt in culpa qui officia deserunt mollit
                                             anim id est laborum.</p>
                                     </div>
-                                    <div class="tab-pane fade" id="tabs-icons-text-2" role="tabpanel" aria-labelledby="tabs-icons-text-2-tab">
+                                    <div class="tab-pane fade" id="tabs-icons-text-2" role="tabpanel"
+                                        aria-labelledby="tabs-icons-text-2-tab">
                                         <div class="review-form">
                                             <h3>Write a review</h3>
                                             <form>
@@ -252,14 +284,16 @@
                 <div class="col-lg-4 col-md-6 col-12">
                     <div class="single-product">
                         <div class="product-img">
-                            <a href="product-detail.html">
+                            <a href="product-detail">
                                 <img src="./assets/img/products/p5.png" class="img-fluid" />
                             </a>
                         </div>
                         <div class="product-content">
-                            <h3><a href="product-detail.html">FlexStart</a></h3>
+                            <h3><a href="product-detail">FlexStart</a></h3>
                             <div class="product-desc">
-                                <span>FlexStart is a creative and modern Bootstrap website template. FlexStart is created for individuals and companies who want to build websites for software, startup, mobile app, digital</span>
+                                <span>FlexStart is a creative and modern Bootstrap website template. FlexStart is
+                                    created for individuals and companies who want to build websites for software,
+                                    startup, mobile app, digital</span>
                             </div>
                             <div class="d-flex product-button">
                                 <a href="#" class=" demo"><span><i class="fa fa-desktop"></i> Demo</span></a>
@@ -272,14 +306,16 @@
                 <div class="col-lg-4 col-md-6 col-12">
                     <div class="single-product">
                         <div class="product-img">
-                            <a href="product-detail.html">
+                            <a href="product-detail">
                                 <img src="./assets/img/products/p5.png" class="img-fluid" />
                             </a>
                         </div>
                         <div class="product-content">
-                            <h3><a href="product-detail.html">FlexStart</a></h3>
+                            <h3><a href="product-detail">FlexStart</a></h3>
                             <div class="product-desc">
-                                <span>FlexStart is a creative and modern Bootstrap website template. FlexStart is created for individuals and companies who want to build websites for software, startup, mobile app, digital</span>
+                                <span>FlexStart is a creative and modern Bootstrap website template. FlexStart is
+                                    created for individuals and companies who want to build websites for software,
+                                    startup, mobile app, digital</span>
                             </div>
                             <div class="d-flex product-button">
                                 <a href="#" class=" demo"><span><i class="fa fa-desktop"></i> Demo</span></a>
@@ -292,14 +328,16 @@
                 <div class="col-lg-4 col-md-6 col-12">
                     <div class="single-product">
                         <div class="product-img">
-                            <a href="product-detail.html">
+                            <a href="product-detail">
                                 <img src="./assets/img/products/p5.png" class="img-fluid" />
                             </a>
                         </div>
                         <div class="product-content">
-                            <h3><a href="product-detail.html">FlexStart</a></h3>
+                            <h3><a href="product-detail">FlexStart</a></h3>
                             <div class="product-desc">
-                                <span>FlexStart is a creative and modern Bootstrap website template. FlexStart is created for individuals and companies who want to build websites for software, startup, mobile app, digital</span>
+                                <span>FlexStart is a creative and modern Bootstrap website template. FlexStart is
+                                    created for individuals and companies who want to build websites for software,
+                                    startup, mobile app, digital</span>
                             </div>
                             <div class="d-flex product-button">
                                 <a href="#" class=" demo"><span><i class="fa fa-desktop"></i> Demo</span></a>
@@ -322,7 +360,9 @@
                             <div class="logo-footer">
                                 <i class="fa fa-shopping-bag fa-3x"></i> <span class="logo">IndoMarket</span>
                             </div>
-                            <p class="text">Praesent dapibus, neque id cursus ucibus, tortor neque egestas augue, magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus.</p>
+                            <p class="text">Praesent dapibus, neque id cursus ucibus, tortor neque egestas augue, magna
+                                eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor,
+                                facilisis luctus, metus.</p>
                             <p class="call">Got Question? Call us 24/7<span><a href="tel:123456789">+0123 456
                                         789</a></span></p>
                         </div>
@@ -388,7 +428,8 @@
                     <div class="row">
                         <div class="col-lg-6 col-12">
                             <div class="left">
-                                <p>Copyright © 2021 <a href="http://indokoding.net" target="_blank">IndoKoding.net</a> - All Rights Reserved.</p>
+                                <p>Copyright © 2021 <a href="http://indokoding.net" target="_blank">IndoKoding.net</a> -
+                                    All Rights Reserved.</p>
                             </div>
                         </div>
                         <div class="col-lg-6 col-12">
@@ -428,9 +469,10 @@
     <script>
         function checkOut() {
             swal("Good job!", "You clicked the button!", "success").then(() => {
-                location.href = 'cart.html'
+                location.href = 'cart'
             })
         }
+
     </script>
 </body>
 
