@@ -11,25 +11,29 @@
     <!-- Canonical SEO -->
     <link rel="canonical" href="https://www.creative-tim.com/product/argon-dashboard-pro" />
     <!--  Social tags      -->
-    <meta name="keywords" content="dashboard, bootstrap 4 dashboard, bootstrap 4 design, bootstrap 4 system, bootstrap 4, bootstrap 4 uit kit, bootstrap 4 kit, argon, argon ui kit, creative tim, html kit, html css template, web template, bootstrap, bootstrap 4, css3 template, frontend, responsive bootstrap template, bootstrap ui kit, responsive ui kit, argon dashboard">
+    <meta name="keywords"
+        content="dashboard, bootstrap 4 dashboard, bootstrap 4 design, bootstrap 4 system, bootstrap 4, bootstrap 4 uit kit, bootstrap 4 kit, argon, argon ui kit, creative tim, html kit, html css template, web template, bootstrap, bootstrap 4, css3 template, frontend, responsive bootstrap template, bootstrap ui kit, responsive ui kit, argon dashboard">
     <meta name="description" content="Start your development with a Dashboard for Bootstrap 4.">
     <!-- Schema.org markup for Google+ -->
     <meta itemprop="name" content="Argon - Premium Dashboard for Bootstrap 4 by Creative Tim">
     <meta itemprop="description" content="Start your development with a Dashboard for Bootstrap 4.">
-    <meta itemprop="image" content="https://s3.amazonaws.com/creativetim_bucket/products/137/original/opt_adp_thumbnail.jpg">
+    <meta itemprop="image"
+        content="https://s3.amazonaws.com/creativetim_bucket/products/137/original/opt_adp_thumbnail.jpg">
     <!-- Twitter Card data -->
     <meta name="twitter:card" content="product">
     <meta name="twitter:site" content="@creativetim">
     <meta name="twitter:title" content="Argon - Premium Dashboard for Bootstrap 4 by Creative Tim">
     <meta name="twitter:description" content="Start your development with a Dashboard for Bootstrap 4.">
     <meta name="twitter:creator" content="@creativetim">
-    <meta name="twitter:image" content="https://s3.amazonaws.com/creativetim_bucket/products/137/original/opt_adp_thumbnail.jpg">
+    <meta name="twitter:image"
+        content="https://s3.amazonaws.com/creativetim_bucket/products/137/original/opt_adp_thumbnail.jpg">
     <!-- Open Graph data -->
     <meta property="fb:app_id" content="655968634437471">
     <meta property="og:title" content="Argon - Premium Dashboard for Bootstrap 4 by Creative Tim" />
     <meta property="og:type" content="article" />
     <meta property="og:url" content="https://demos.creative-tim.com/argon-dashboard/index.html" />
-    <meta property="og:image" content="https://s3.amazonaws.com/creativetim_bucket/products/137/original/opt_adp_thumbnail.jpg" />
+    <meta property="og:image"
+        content="https://s3.amazonaws.com/creativetim_bucket/products/137/original/opt_adp_thumbnail.jpg" />
     <meta property="og:description" content="Start your development with a Dashboard for Bootstrap 4." />
     <meta property="og:site_name" content="Creative Tim" />
     <!-- Favicon -->
@@ -43,7 +47,7 @@
     <link rel="stylesheet" href="./assets/css/argon.min-v=1.0.0.css" type="text/css">
     <!-- Google Tag Manager -->
     <script>
-        (function(w, d, s, l, i) {
+        (function (w, d, s, l, i) {
             w[l] = w[l] || [];
             w[l].push({
                 'gtm.start': new Date().getTime(),
@@ -57,25 +61,28 @@
                 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
             f.parentNode.insertBefore(j, f);
         })(window, document, 'script', 'dataLayer', 'GTM-NKDMSK6');
+
     </script>
     <!-- End Google Tag Manager -->
 </head>
 
 <body>
     <!-- Google Tag Manager (noscript) -->
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NKDMSK6" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NKDMSK6" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
     <!-- Sidenav -->
     <nav class="sidenav navbar navbar-vertical fixed-left navbar-expand-xs navbar-light bg-white" id="sidenav-main">
         <div class="scrollbar-inner">
             <!-- Brand -->
             <div class="sidenav-header d-flex align-items-center">
-                <a class="navbar-brand" href="../dashboards/dashboard.html">
+                <a class="navbar-brand" href="./">
                     <img src="./assets/img/brand/blue.png" class="navbar-brand-img" alt="...">
                 </a>
                 <div class="ml-auto">
                     <!-- Sidenav toggler -->
-                    <div class="sidenav-toggler d-none d-xl-block" data-action="sidenav-unpin" data-target="#sidenav-main">
+                    <div class="sidenav-toggler d-none d-xl-block" data-action="sidenav-unpin"
+                        data-target="#sidenav-main">
                         <div class="sidenav-toggler-inner">
                             <i class="sidenav-toggler-line"></i>
                             <i class="sidenav-toggler-line"></i>
@@ -90,7 +97,8 @@
                     <!-- Nav items -->
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link" href="tables.html#navbar-dashboards" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="navbar-dashboards">
+                            <a class="nav-link" href="tables.html#navbar-dashboards" data-toggle="collapse"
+                                role="button" aria-expanded="false" aria-controls="navbar-dashboards">
                                 <i class="ni ni-shop text-primary"></i>
                                 <span class="nav-link-text">Dashboards</span>
                             </a>
@@ -106,7 +114,8 @@
                             </div>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="tables.html#navbar-examples" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="navbar-examples">
+                            <a class="nav-link" href="tables.html#navbar-examples" data-toggle="collapse" role="button"
+                                aria-expanded="false" aria-controls="navbar-examples">
                                 <i class="ni ni-ungroup text-orange"></i>
                                 <span class="nav-link-text">Examples</span>
                             </a>
@@ -134,7 +143,8 @@
                             </div>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="tables.html#navbar-components" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="navbar-components">
+                            <a class="nav-link" href="tables.html#navbar-components" data-toggle="collapse"
+                                role="button" aria-expanded="false" aria-controls="navbar-components">
                                 <i class="ni ni-ui-04 text-info"></i>
                                 <span class="nav-link-text">Components</span>
                             </a>
@@ -159,7 +169,9 @@
                                         <a href="../components/typography.html" class="nav-link">Typography</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a href="tables.html#navbar-multilevel" class="nav-link" data-toggle="collapse" role="button" aria-expanded="true" aria-controls="navbar-multilevel">Multi level</a>
+                                        <a href="tables.html#navbar-multilevel" class="nav-link" data-toggle="collapse"
+                                            role="button" aria-expanded="true" aria-controls="navbar-multilevel">Multi
+                                            level</a>
                                         <div class="collapse show" id="navbar-multilevel" style="">
                                             <ul class="nav nav-sm flex-column">
                                                 <li class="nav-item">
@@ -178,7 +190,8 @@
                             </div>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="tables.html#navbar-forms" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="navbar-forms">
+                            <a class="nav-link" href="tables.html#navbar-forms" data-toggle="collapse" role="button"
+                                aria-expanded="false" aria-controls="navbar-forms">
                                 <i class="ni ni-single-copy-04 text-pink"></i>
                                 <span class="nav-link-text">Forms</span>
                             </a>
@@ -197,7 +210,8 @@
                             </div>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" href="tables.html#navbar-tables" data-toggle="collapse" role="button" aria-expanded="true" aria-controls="navbar-tables">
+                            <a class="nav-link active" href="tables.html#navbar-tables" data-toggle="collapse"
+                                role="button" aria-expanded="true" aria-controls="navbar-tables">
                                 <i class="ni ni-align-left-2 text-default"></i>
                                 <span class="nav-link-text">Tables</span>
                             </a>
@@ -216,7 +230,8 @@
                             </div>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="tables.html#navbar-maps" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="navbar-maps">
+                            <a class="nav-link" href="tables.html#navbar-maps" data-toggle="collapse" role="button"
+                                aria-expanded="false" aria-controls="navbar-maps">
                                 <i class="ni ni-map-big text-primary"></i>
                                 <span class="nav-link-text">Maps</span>
                             </a>
@@ -301,15 +316,17 @@
                                 <input class="form-control" placeholder="Search" type="text">
                             </div>
                         </div>
-                        <button type="button" class="close" data-action="search-close" data-target="#navbar-search-main" aria-label="Close">
-              <span aria-hidden="true">×</span>
-            </button>
+                        <button type="button" class="close" data-action="search-close" data-target="#navbar-search-main"
+                            aria-label="Close">
+                            <span aria-hidden="true">×</span>
+                        </button>
                     </form>
                     <!-- Navbar links -->
                     <ul class="navbar-nav align-items-center ml-md-auto">
                         <li class="nav-item d-xl-none">
                             <!-- Sidenav toggler -->
-                            <div class="pr-3 sidenav-toggler sidenav-toggler-dark" data-action="sidenav-pin" data-target="#sidenav-main">
+                            <div class="pr-3 sidenav-toggler sidenav-toggler-dark" data-action="sidenav-pin"
+                                data-target="#sidenav-main">
                                 <div class="sidenav-toggler-inner">
                                     <i class="sidenav-toggler-line"></i>
                                     <i class="sidenav-toggler-line"></i>
@@ -318,18 +335,21 @@
                             </div>
                         </li>
                         <li class="nav-item d-sm-none">
-                            <a class="nav-link" href="tables.html#" data-action="search-show" data-target="#navbar-search-main">
+                            <a class="nav-link" href="tables.html#" data-action="search-show"
+                                data-target="#navbar-search-main">
                                 <i class="ni ni-zoom-split-in"></i>
                             </a>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link" href="tables.html#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <a class="nav-link" href="tables.html#" role="button" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">
                                 <i class="ni ni-bell-55"></i>
                             </a>
                             <div class="dropdown-menu dropdown-menu-xl dropdown-menu-right py-0 overflow-hidden">
                                 <!-- Dropdown header -->
                                 <div class="px-3 py-3">
-                                    <h6 class="text-sm text-muted m-0">You have <strong class="text-primary">13</strong> notifications.</h6>
+                                    <h6 class="text-sm text-muted m-0">You have <strong class="text-primary">13</strong>
+                                        notifications.</h6>
                                 </div>
                                 <!-- List group -->
                                 <div class="list-group list-group-flush">
@@ -337,12 +357,13 @@
                                         <div class="row align-items-center">
                                             <div class="col-auto">
                                                 <!-- Avatar -->
-                                                <img alt="Image placeholder" src="./assets/img/theme/team-1.jpg" class="avatar rounded-circle">
+                                                <img alt="Image placeholder" src="./assets/img/theme/team-1.jpg"
+                                                    class="avatar rounded-circle">
                                             </div>
                                             <div class="col ml--2">
                                                 <div class="d-flex justify-content-between align-items-center">
                                                     <div>
-                                                        <h4 class="mb-0 text-sm">John Snow</h4>
+                                                        <h4 class="mb-0 text-sm">{{ Auth::user()->name }}</h4>
                                                     </div>
                                                     <div class="text-right text-muted">
                                                         <small>2 hrs ago</small>
@@ -356,12 +377,13 @@
                                         <div class="row align-items-center">
                                             <div class="col-auto">
                                                 <!-- Avatar -->
-                                                <img alt="Image placeholder" src="./assets/img/theme/team-2.jpg" class="avatar rounded-circle">
+                                                <img alt="Image placeholder" src="./assets/img/theme/team-2.jpg"
+                                                    class="avatar rounded-circle">
                                             </div>
                                             <div class="col ml--2">
                                                 <div class="d-flex justify-content-between align-items-center">
                                                     <div>
-                                                        <h4 class="mb-0 text-sm">John Snow</h4>
+                                                        <h4 class="mb-0 text-sm">{{ Auth::user()->name }}</h4>
                                                     </div>
                                                     <div class="text-right text-muted">
                                                         <small>3 hrs ago</small>
@@ -375,12 +397,13 @@
                                         <div class="row align-items-center">
                                             <div class="col-auto">
                                                 <!-- Avatar -->
-                                                <img alt="Image placeholder" src="./assets/img/theme/team-3.jpg" class="avatar rounded-circle">
+                                                <img alt="Image placeholder" src="./assets/img/theme/team-3.jpg"
+                                                    class="avatar rounded-circle">
                                             </div>
                                             <div class="col ml--2">
                                                 <div class="d-flex justify-content-between align-items-center">
                                                     <div>
-                                                        <h4 class="mb-0 text-sm">John Snow</h4>
+                                                        <h4 class="mb-0 text-sm">{{ Auth::user()->name }}</h4>
                                                     </div>
                                                     <div class="text-right text-muted">
                                                         <small>5 hrs ago</small>
@@ -394,12 +417,13 @@
                                         <div class="row align-items-center">
                                             <div class="col-auto">
                                                 <!-- Avatar -->
-                                                <img alt="Image placeholder" src="./assets/img/theme/team-4.jpg" class="avatar rounded-circle">
+                                                <img alt="Image placeholder" src={{ Auth::user()->profile_photo_url }}
+                                                    class="avatar rounded-circle">
                                             </div>
                                             <div class="col ml--2">
                                                 <div class="d-flex justify-content-between align-items-center">
                                                     <div>
-                                                        <h4 class="mb-0 text-sm">John Snow</h4>
+                                                        <h4 class="mb-0 text-sm">{{ Auth::user()->name }}</h4>
                                                     </div>
                                                     <div class="text-right text-muted">
                                                         <small>2 hrs ago</small>
@@ -413,12 +437,13 @@
                                         <div class="row align-items-center">
                                             <div class="col-auto">
                                                 <!-- Avatar -->
-                                                <img alt="Image placeholder" src="./assets/img/theme/team-5.jpg" class="avatar rounded-circle">
+                                                <img alt="Image placeholder" src="./assets/img/theme/team-5.jpg"
+                                                    class="avatar rounded-circle">
                                             </div>
                                             <div class="col ml--2">
                                                 <div class="d-flex justify-content-between align-items-center">
                                                     <div>
-                                                        <h4 class="mb-0 text-sm">John Snow</h4>
+                                                        <h4 class="mb-0 text-sm">{{ Auth::user()->name }}</h4>
                                                     </div>
                                                     <div class="text-right text-muted">
                                                         <small>3 hrs ago</small>
@@ -430,49 +455,52 @@
                                     </a>
                                 </div>
                                 <!-- View all -->
-                                <a href="tables.html#!" class="dropdown-item text-center text-primary font-weight-bold py-3">View all</a>
+                                <a href="tables.html#!"
+                                    class="dropdown-item text-center text-primary font-weight-bold py-3">View all</a>
                             </div>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link" href="tables.html#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <a class="nav-link" href="tables.html#" role="button" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">
                                 <i class="ni ni-ungroup"></i>
                             </a>
-                            <div class="dropdown-menu dropdown-menu-lg dropdown-menu-dark bg-default dropdown-menu-right">
+                            <div
+                                class="dropdown-menu dropdown-menu-lg dropdown-menu-dark bg-default dropdown-menu-right">
                                 <div class="row shortcuts px-4">
                                     <a href="tables.html#!" class="col-4 shortcut-item">
                                         <span class="shortcut-media avatar rounded-circle bg-gradient-red">
-                      <i class="ni ni-calendar-grid-58"></i>
-                    </span>
+                                            <i class="ni ni-calendar-grid-58"></i>
+                                        </span>
                                         <small>Calendar</small>
                                     </a>
                                     <a href="tables.html#!" class="col-4 shortcut-item">
                                         <span class="shortcut-media avatar rounded-circle bg-gradient-orange">
-                      <i class="ni ni-email-83"></i>
-                    </span>
+                                            <i class="ni ni-email-83"></i>
+                                        </span>
                                         <small>Email</small>
                                     </a>
                                     <a href="tables.html#!" class="col-4 shortcut-item">
                                         <span class="shortcut-media avatar rounded-circle bg-gradient-info">
-                      <i class="ni ni-credit-card"></i>
-                    </span>
+                                            <i class="ni ni-credit-card"></i>
+                                        </span>
                                         <small>Payments</small>
                                     </a>
                                     <a href="tables.html#!" class="col-4 shortcut-item">
                                         <span class="shortcut-media avatar rounded-circle bg-gradient-green">
-                      <i class="ni ni-books"></i>
-                    </span>
+                                            <i class="ni ni-books"></i>
+                                        </span>
                                         <small>Reports</small>
                                     </a>
                                     <a href="tables.html#!" class="col-4 shortcut-item">
                                         <span class="shortcut-media avatar rounded-circle bg-gradient-purple">
-                      <i class="ni ni-pin-3"></i>
-                    </span>
+                                            <i class="ni ni-pin-3"></i>
+                                        </span>
                                         <small>Maps</small>
                                     </a>
                                     <a href="tables.html#!" class="col-4 shortcut-item">
                                         <span class="shortcut-media avatar rounded-circle bg-gradient-yellow">
-                      <i class="ni ni-basket"></i>
-                    </span>
+                                            <i class="ni ni-basket"></i>
+                                        </span>
                                         <small>Shop</small>
                                     </a>
                                 </div>
@@ -481,13 +509,14 @@
                     </ul>
                     <ul class="navbar-nav align-items-center ml-auto ml-md-0">
                         <li class="nav-item dropdown">
-                            <a class="nav-link pr-0" href="tables.html#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <a class="nav-link pr-0" href="tables.html#" role="button" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">
                                 <div class="media align-items-center">
                                     <span class="avatar avatar-sm rounded-circle">
-                    <img alt="Image placeholder" src="./assets/img/theme/team-4.jpg">
-                  </span>
+                                        <img alt="Image placeholder" src={{ Auth::user()->profile_photo_url }}>
+                                    </span>
                                     <div class="media-body ml-2 d-none d-lg-block">
-                                        <span class="mb-0 text-sm  font-weight-bold">John Snow</span>
+                                        <span class="mb-0 text-sm  font-weight-bold">{{ Auth::user()->name }}</span>
                                     </div>
                                 </div>
                             </a>
@@ -495,7 +524,7 @@
                                 <div class="dropdown-header noti-title">
                                     <h6 class="text-overflow m-0">Welcome!</h6>
                                 </div>
-                                <a href="tables.html#!" class="dropdown-item">
+                                <a href={{ route('profile.show') }} class="dropdown-item">
                                     <i class="ni ni-single-02"></i>
                                     <span>My profile</span>
                                 </a>
@@ -512,10 +541,14 @@
                                     <span>Support</span>
                                 </a>
                                 <div class="dropdown-divider"></div>
-                                <a href="tables.html#!" class="dropdown-item">
-                                    <i class="ni ni-user-run"></i>
-                                    <span>Logout</span>
-                                </a>
+                                <form method="POST" action="{{ route('logout') }}">
+                                    @csrf
+                                    <a href='/' onclick="event.preventDefault();
+                                    this.closest('form').submit();" class="dropdown-item">
+                                        <i class="ni ni-user-run"></i>
+                                        <span>Logout</span>
+                                    </a>
+                                </form>
                             </div>
                         </li>
                     </ul>
@@ -532,7 +565,8 @@
                             <h6 class="h2 text-white d-inline-block mb-0">Tables</h6>
                             <nav aria-label="breadcrumb" class="d-none d-md-inline-block ml-md-4">
                                 <ol class="breadcrumb breadcrumb-links breadcrumb-dark">
-                                    <li class="breadcrumb-item"><a href="tables.html#"><i class="fas fa-home"></i></a></li>
+                                    <li class="breadcrumb-item"><a href="tables.html#"><i class="fas fa-home"></i></a>
+                                    </li>
                                     <li class="breadcrumb-item"><a href="tables.html#">Tables</a></li>
                                     <li class="breadcrumb-item active" aria-current="page">Tables</li>
                                 </ol>
@@ -556,7 +590,8 @@
                             <h3 class="mb-0">Categories</h3>
                         </div>
                         <div class="col-6 text-right">
-                            <a href="tables.html#" class="btn btn-sm btn-neutral btn-round btn-icon" data-toggle="tooltip" data-original-title="Add Category">
+                            <a href="tables.html#" class="btn btn-sm btn-neutral btn-round btn-icon"
+                                data-toggle="tooltip" data-original-title="Add Category">
                                 <span class="btn-inner--icon"><i class="fas fa-plus-circle"></i></span>
                                 <span class="btn-inner--text">Add</span>
                             </a>
@@ -586,10 +621,12 @@
                                     <span class="text-muted">10/09/2018</span>
                                 </td>
                                 <td class="table-actions text-right">
-                                    <a href="tables.html#!" class="table-action" data-toggle="tooltip" data-original-title="Edit product">
+                                    <a href="tables.html#!" class="table-action" data-toggle="tooltip"
+                                        data-original-title="Edit product">
                                         <i class="fas fa-user-edit"></i>
                                     </a>
-                                    <a href="tables.html#!" class="table-action table-action-delete" data-toggle="tooltip" data-original-title="Delete product">
+                                    <a href="tables.html#!" class="table-action table-action-delete"
+                                        data-toggle="tooltip" data-original-title="Delete product">
                                         <i class="fas fa-trash"></i>
                                     </a>
                                 </td>
@@ -605,10 +642,12 @@
                                     <span class="text-muted">10/09/2018</span>
                                 </td>
                                 <td class="table-actions text-right">
-                                    <a href="tables.html#!" class="table-action" data-toggle="tooltip" data-original-title="Edit product">
+                                    <a href="tables.html#!" class="table-action" data-toggle="tooltip"
+                                        data-original-title="Edit product">
                                         <i class="fas fa-user-edit"></i>
                                     </a>
-                                    <a href="tables.html#!" class="table-action table-action-delete" data-toggle="tooltip" data-original-title="Delete product">
+                                    <a href="tables.html#!" class="table-action table-action-delete"
+                                        data-toggle="tooltip" data-original-title="Delete product">
                                         <i class="fas fa-trash"></i>
                                     </a>
                                 </td>
@@ -624,10 +663,12 @@
                                     <span class="text-muted">10/09/2018</span>
                                 </td>
                                 <td class="table-actions text-right">
-                                    <a href="tables.html#!" class="table-action" data-toggle="tooltip" data-original-title="Edit product">
+                                    <a href="tables.html#!" class="table-action" data-toggle="tooltip"
+                                        data-original-title="Edit product">
                                         <i class="fas fa-user-edit"></i>
                                     </a>
-                                    <a href="tables.html#!" class="table-action table-action-delete" data-toggle="tooltip" data-original-title="Delete product">
+                                    <a href="tables.html#!" class="table-action table-action-delete"
+                                        data-toggle="tooltip" data-original-title="Delete product">
                                         <i class="fas fa-trash"></i>
                                     </a>
                                 </td>
@@ -643,10 +684,12 @@
                                     <span class="text-muted">10/09/2018</span>
                                 </td>
                                 <td class="table-actions text-right">
-                                    <a href="tables.html#!" class="table-action" data-toggle="tooltip" data-original-title="Edit product">
+                                    <a href="tables.html#!" class="table-action" data-toggle="tooltip"
+                                        data-original-title="Edit product">
                                         <i class="fas fa-user-edit"></i>
                                     </a>
-                                    <a href="tables.html#!" class="table-action table-action-delete" data-toggle="tooltip" data-original-title="Delete product">
+                                    <a href="tables.html#!" class="table-action table-action-delete"
+                                        data-toggle="tooltip" data-original-title="Delete product">
                                         <i class="fas fa-trash"></i>
                                     </a>
                                 </td>
@@ -662,10 +705,12 @@
                                     <span class="text-muted">10/09/2018</span>
                                 </td>
                                 <td class="table-actions text-right">
-                                    <a href="tables.html#!" class="table-action" data-toggle="tooltip" data-original-title="Edit product">
+                                    <a href="tables.html#!" class="table-action" data-toggle="tooltip"
+                                        data-original-title="Edit product">
                                         <i class="fas fa-user-edit"></i>
                                     </a>
-                                    <a href="tables.html#!" class="table-action table-action-delete" data-toggle="tooltip" data-original-title="Delete product">
+                                    <a href="tables.html#!" class="table-action table-action-delete"
+                                        data-toggle="tooltip" data-original-title="Delete product">
                                         <i class="fas fa-trash"></i>
                                     </a>
                                 </td>
@@ -682,7 +727,8 @@
                             <div class="form-row">
                                 <div class="col-6">
                                     <label class="form-control-label" for="validationCustom01">Add Categories</label>
-                                    <input type="text" class="form-control" id="validationCustom01" placeholder="Category name" required>
+                                    <input type="text" class="form-control" id="validationCustom01"
+                                        placeholder="Category name" required>
                                     <div class="invalid-feedback">
                                         Fill in category name
                                     </div>
@@ -698,7 +744,8 @@
                 <div class="row align-items-center justify-content-lg-between">
                     <div class="col-lg-6">
                         <div class="copyright text-center text-lg-left text-muted">
-                            &copy; 2018 <a href="https://www.creative-tim.com" class="font-weight-bold ml-1" target="_blank">Creative Tim</a>
+                            &copy; 2018 <a href="https://www.creative-tim.com" class="font-weight-bold ml-1"
+                                target="_blank">Creative Tim</a>
                         </div>
                     </div>
                     <div class="col-lg-6">
@@ -707,13 +754,15 @@
                                 <a href="https://www.creative-tim.com" class="nav-link" target="_blank">Creative Tim</a>
                             </li>
                             <li class="nav-item">
-                                <a href="https://www.creative-tim.com/presentation" class="nav-link" target="_blank">About Us</a>
+                                <a href="https://www.creative-tim.com/presentation" class="nav-link"
+                                    target="_blank">About Us</a>
                             </li>
                             <li class="nav-item">
                                 <a href="http://blog.creative-tim.com" class="nav-link" target="_blank">Blog</a>
                             </li>
                             <li class="nav-item">
-                                <a href="https://www.creative-tim.com/license" class="nav-link" target="_blank">License</a>
+                                <a href="https://www.creative-tim.com/license" class="nav-link"
+                                    target="_blank">License</a>
                             </li>
                         </ul>
                     </div>
@@ -735,14 +784,14 @@
     <script src="./assets/js/demo.min.js"></script>
     <script>
         // Example starter JavaScript for disabling form submissions if there are invalid fields
-        (function() {
+        (function () {
             'use strict';
-            window.addEventListener('load', function() {
+            window.addEventListener('load', function () {
                 // Fetch all the forms we want to apply custom Bootstrap validation styles to
                 var forms = document.getElementsByClassName('needs-validation');
                 // Loop over them and prevent submission
-                var validation = Array.prototype.filter.call(forms, function(form) {
-                    form.addEventListener('submit', function(event) {
+                var validation = Array.prototype.filter.call(forms, function (form) {
+                    form.addEventListener('submit', function (event) {
                         if (form.checkValidity() === false) {
                             event.preventDefault();
                             event.stopPropagation();
@@ -752,12 +801,13 @@
                 });
             }, false);
         })();
+
     </script>
     <script>
         // Facebook Pixel Code Don't Delete
-        ! function(f, b, e, v, n, t, s) {
+        ! function (f, b, e, v, n, t, s) {
             if (f.fbq) return;
-            n = f.fbq = function() {
+            n = f.fbq = function () {
                 n.callMethod ?
                     n.callMethod.apply(n, arguments) : n.queue.push(arguments)
             };
@@ -781,10 +831,12 @@
         } catch (err) {
             console.log('Facebook Track Error:', err);
         }
+
     </script>
     <noscript>
-    <img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=111649226022273&ev=PageView&noscript=1" />
-  </noscript>
+        <img height="1" width="1" style="display:none"
+            src="https://www.facebook.com/tr?id=111649226022273&ev=PageView&noscript=1" />
+    </noscript>
 </body>
 
 </html>

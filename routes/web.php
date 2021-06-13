@@ -15,12 +15,13 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+Route::middleware(['auth:sanctum', 'verified'])->get('/', HomeController::class);
 Route::get('/', HomeController::class);
-// Route::get('detail', [HomeController::class, 'detail']);
 
-Route::get('products', [ProductController::class, 'products']);
 
-Route::get('product-detail', [ProductController::class, 'productDetail']);
+Route::get('products', [ProductController::class, 'product']);
+Route::get('products/{category:name}', [ProductController::class, 'product']);
+Route::get('product-detail/{product:id}', [ProductController::class, 'productDetail']);
 
 Route::get('cart', function () {
     return view('cart');
@@ -32,4 +33,9 @@ Route::get('checkout', function () {
 
 Route::get('seller', function () {
     return view('tables');
+});
+
+
+Route::get('dashboard', function () {
+    return view('dashboard-seller');
 });
