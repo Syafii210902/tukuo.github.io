@@ -34,7 +34,18 @@ Route::get('seller', function () {
     return view('tables');
 });
 
-
 Route::get('dashboard', function () {
-    return view('dashboard-seller');
+    return view('user.index');
+});
+
+Route::get('dashboard/downloads', function () {
+    return view('user.downloads');
+});
+
+Route::get('dashboard/products', function () {
+    return view('user.products');
+});
+
+Route::get('dashboard/transactions', function () {
+    return view('user.transactions');
 });
