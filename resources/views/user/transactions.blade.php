@@ -8,7 +8,7 @@
         <div class="card-header border-0">
             <div class="row">
                 <div class="col-6">
-                    <h3 class="mb-0">Your Product</h3>
+                    <h3 class="mb-0">Purchase History </h3>
                 </div>
             </div>
         </div>
@@ -19,7 +19,7 @@
                     <tr>
                         <th>No</th>
                         <th>Name</th>
-                        <th>Created at</th>
+                        <th>Date</th>
                         <th></th>
                     </tr>
                 </thead>
@@ -38,10 +38,6 @@
                             <a href="tables.html#!" class="table-action" data-toggle="tooltip"
                                 data-original-title="Edit product">
                                 <i class="fas fa-user-edit"></i>
-                            </a>
-                            <a href="tables.html#!" class="table-action table-action-delete" data-toggle="tooltip"
-                                data-original-title="Delete product">
-                                <i class="fas fa-trash"></i>
                             </a>
                         </td>
                     </tr>

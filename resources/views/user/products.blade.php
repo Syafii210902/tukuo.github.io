@@ -11,8 +11,7 @@
                     <h3 class="mb-0">Your Product</h3>
                 </div>
                 <div class="col-6 text-right">
-                    <a href="tables.html#" class="btn btn-sm btn-neutral btn-round btn-icon" data-toggle="tooltip"
-                        data-original-title="Add Category">
+                    <a href="#" class="btn btn-sm btn-neutral btn-round btn-icon" onclick="$('#form-product').toggle()">
                         <span class="btn-inner--icon"><i class="fas fa-plus-circle"></i></span>
                         <span class="btn-inner--text">Add</span>
                     </a>
@@ -32,50 +31,36 @@
                 </thead>
                 <tbody>
                     <tr>
+                        {{-- {{dd(Auth::user()->seller->products)}} --}}
+                        @foreach (Auth::user()->seller->products as $index => $item)
                         <td class="table-user">
-                            <b>1</b>
+                            <b>{{$index+1}}</b>
                         </td>
                         <td>
-                            <a href="tables.html#!" class="font-weight-bold">Argon Dashboard PRO</a>
+                            <a href="#" class="font-weight-bold">{{$item->name}}</a>
                         </td>
                         <td>
-                            <span class="text-muted">10/09/2018</span>
+                            <span class="text-muted">{{$item->created_at}}</span>
                         </td>
                         <td class="table-actions text-right">
-                            <a href="tables.html#!" class="table-action" data-toggle="tooltip"
-                                data-original-title="Edit product">
-                                <i class="fas fa-user-edit"></i>
+                            <a href="#" class="table-action">
+                                <i class="fas fa-edit"> Edit</i>
                             </a>
-                            <a href="tables.html#!" class="table-action table-action-delete" data-toggle="tooltip"
-                                data-original-title="Delete product">
-                                <i class="fas fa-trash"></i>
+                            <a href="#" class="table-action table-action-delete">
+                                <i class="fa fa-trash"> Delete</i>
+                            </a>
+                            <a href="#" class="table-action">
+                                <i class="fas fa-arrow-alt-circle-up"> Preview</i>
                             </a>
                         </td>
+                        @endforeach
                     </tr>
                 </tbody>
             </table>
         </div>
     </div>
-    <!-- Add Categories -->
-    <div class="mt--10">
-        <div class="card">
-            <div class="card-body">
-                <form class="needs-validation" novalidate>
-                    <div class="form-row">
-                        <div class="col-6">
-                            <label class="form-control-label" for="validationCustom01">Add Categories</label>
-                            <input type="text" class="form-control" id="validationCustom01" placeholder="Category name"
-                                required>
-                            <div class="invalid-feedback">
-                                Fill in category name
-                            </div>
-                        </div>
-                    </div>
-                    <button class="btn btn-primary mt-3" type="submit">Save</button>
-                </form>
-            </div>
-        </div>
-    </div>
 </div>
+
+@include('user.form-product')
 
 @endsection

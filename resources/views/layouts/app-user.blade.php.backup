@@ -46,9 +46,6 @@
     <!-- Argon CSS -->
     <link rel="stylesheet" href="/assets/css/argon.min-v=1.0.0.css" type="text/css">
 
-
-    <!-- Main CSS-->
-    <link type="text/css" href="/assets/css/style.css" rel="stylesheet">
 </head>
 
 <body>
@@ -118,7 +115,7 @@
             <div class="container-fluid">
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
 
-                    <h3><a class=" text-white pr-3 large-4" href="/">{{ Auth::user()->seller ? '' : 'Tukuo'}}</a>
+                    <h3><a class=" text-white pr-3 large-4" href="/">{{ Auth::user()->seller ? '': 'Tukuo'}}</a>
                     </h3>
 
                     <!-- Search form -->
@@ -138,7 +135,7 @@
                     </form>
                     <!-- Navbar links -->
                     <ul class="navbar-nav align-items-center ml-md-auto">
-                        {{-- <li class="nav-item d-xl-none">
+                        <li class="nav-item d-xl-none">
                             <!-- Sidenav toggler -->
                             <div class="pr-3 sidenav-toggler sidenav-toggler-dark" data-action="sidenav-pin"
                                 data-target="#sidenav-main">
@@ -148,7 +145,7 @@
                                     <i class="sidenav-toggler-line"></i>
                                 </div>
                             </div>
-                        </li> --}}
+                        </li>
                         <li class="nav-item d-sm-none">
                             <a class="nav-link" href="tables.html#" data-action="search-show"
                                 data-target="#navbar-search-main">
@@ -343,12 +340,10 @@
                                     <i class="ni ni-single-02"></i>
                                     <span>My profile</span>
                                 </a>
-                                @if (!(Auth::user()->seller))
-                                <a href="#" class="dropdown-item" data-toggle="modal" data-target="#exampleModal">
+                                <a href="tables.html#!" class="dropdown-item">
                                     <i class="ni ni-settings-gear-65"></i>
                                     <span>Become an Author</span>
                                 </a>
-                                @endif
                                 <div class="dropdown-divider"></div>
                                 <form method="POST" action="{{ route('logout') }}">
                                     @csrf

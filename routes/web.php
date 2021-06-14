@@ -3,6 +3,7 @@
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\ProductController;
 use App\Http\Controllers\TransactionController;
+use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -20,9 +21,12 @@ Route::middleware(['auth:sanctum', 'verified'])->get('/', HomeController::class)
 Route::get('/', HomeController::class);
 
 
+Route::post('/seller/store', [UserController::class, 'store']);
+
 Route::get('products', [ProductController::class, 'product']);
 Route::get('products/{category:name}', [ProductController::class, 'product']);
 Route::get('product-detail/{product:id}', [ProductController::class, 'productDetail']);
+// Route::get('product-detail/{product:id}', [ProductController::class, 'productDetail']);
 
 Route::get('cart', [TransactionController::class, 'cart']);
 

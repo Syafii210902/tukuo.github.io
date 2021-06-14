@@ -14,6 +14,8 @@
     </div>
 </section>
 <section class="shoping-cart spad">
+    {{-- {{dd(Auth::user()->transactions->where('status', '0'))}} --}}
+    @if (Auth::user()->transactions->where('status', '0')->count() > 0)
     <div class="container">
         <div class="row">
             <div class="col-lg-12">
@@ -24,12 +26,12 @@
                                 <th class="shoping__product">Products</th>
                                 <th>Price</th>
                                 {{-- <th>Quantity</th>
-                                <th>Total</th> --}}
+                                    <th>Total</th> --}}
                                 <th></th>
                             </tr>
                         </thead>
                         <tbody>
-                            @foreach ($user->transactions->where('status','1') as $item)
+                            @foreach ($user->transactions->where('status','0') as $item)
                             <tr>
                                 <td class="shoping__cart__item">
                                     <img src="assets/img/products/p5.png" alt="">
@@ -73,5 +75,20 @@
             </div>
         </div>
     </div>
+    @else
+    <div class="container-fluid mt--6">
+        <div class="card text-center p-5">
+            <div class="text-center pb-2">
+                <h2>
+                    <i class=" fa fa-info-circle "></i> Your Cart is Empt
+                </h2>
+            </div>
+            <p>Come on</p>
+            <div class="">
+                <a href="/products/kategori1" class="btn btn-primary">Explore Template</a>
+            </div>
+        </div>
+    </div>
+    @endif
 </section>
 @endsection

@@ -31,7 +31,7 @@
     <!-- SweetAlert -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/7.33.1/sweetalert2.min.css">
 
-    <link rel="stylesheet" href='/css/bootstrap.css'>
+    {{-- <link rel="stylesheet" href='/css/bootstrap.css'> --}}
 </head>
 
 <body>
@@ -40,24 +40,25 @@
             <div class="container">
                 <div class="row">
                     <div class="col-6 text-left">
-                        <ul class="top-links contact-info">
-                            <li><i class="fa fa-envelope-o"></i> <a href="#">contact@example.com</a></li>
-                            <li><i class="fa fa-whatsapp"></i> +1 5589 55488 55</li>
-                        </ul>
+
                     </div>
                     <div class=" col-6 text-right">
                         <ul class="top-links account-links">
                             @if (Auth::user()!==null)
-                            <li><i class="fa fa-user-circle-o"></i> <a href="#">My Account</a></li>
-                            <a href='dashboard'>Dashboard</a>
-                            <form method="POST" action="/logout">
-                                @csrf
-                                <a href='/logout'
-                                    onclick="event.preventDefault();this.closest('form').submit();">Logout</a>
-                            </form>
+                            <li><i class="fa fa-user-circle-o"></i> <a
+                                    href={{Auth::user()->seller ? '/dashboard/products': '/dashboard'}}>{{Auth::user()->name}}</a>
+                            </li>
+                            <li>
+                                <form method="POST" action="/logout" class=" inline">
+                                    @csrf
+                                    <a href='/logout'
+                                        onclick="event.preventDefault();this.closest('form').submit();">Logout</a>
+                                </form>
+                            </li>
+                            </a>
                             @else
-                            <li><i class="fa fa-power-off"></i> <a href='/register'>Sign Up</a></li>
-                            <li><i class="fa fa-power-off"></i> <a href='/login'>Login</a></li>
+                            <li><i class=""></i> <a href='/register'>Sign Up</a></li>
+                            <li><i class=""></i> <a href='/login'>Login</a></li>
                             @endif
                         </ul>
                     </div>
@@ -91,9 +92,9 @@
                                 <span class="badge badge-default">5</span> --}}
                             </div>
                             <div class="single-icon shopping-cart">
-                                <a href="cart"><i class="fa fa-shopping-cart fa-2x"></i></a>
+                                <a href="/cart"><i class="fa fa-shopping-cart fa-2x"></i></a>
                                 <span
-                                    class="badge badge-default">{{Auth::user() ? Auth::user()->transactions->count():''}}</span>
+                                    class="badge badge-default">{{Auth::user() ?  Auth::user()->transactions->where('status', '0')->count(): ''}}</span>
                             </div>
                         </div>
                     </div>

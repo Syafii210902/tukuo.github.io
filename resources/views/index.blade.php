@@ -122,7 +122,7 @@
                     <div class="product-content">
                         <h3><a href={{'product-detail/'.$item->id}}>{{$item->name}}</a></h3>
                         <div class="product-desc">
-                            <span>{{$item->description}}</span>
+                            <span>{{ Str::limit($item->description, 40, $end='.......')}}</span>
                         </div>
                         <div class="d-flex product-button">
                             <a href="#" class=" demo"><span><i class="fa fa-desktop"></i> Demo</span></a>
