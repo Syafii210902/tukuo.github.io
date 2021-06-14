@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jun 13, 2021 at 03:03 PM
+-- Generation Time: Jun 14, 2021 at 05:07 AM
 -- Server version: 10.4.13-MariaDB
 -- PHP Version: 7.4.7
 
@@ -182,8 +182,8 @@ CREATE TABLE `sessions` (
 --
 
 INSERT INTO `sessions` (`id`, `user_id`, `ip_address`, `user_agent`, `payload`, `last_activity`) VALUES
-('n7hz1grbfGI8YSGEBoWJRwH8ixp6lPAmROANKaBM', NULL, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.77 Safari/537.36 Edg/91.0.864.41', 'YTozOntzOjY6Il90b2tlbiI7czo0MDoiYWdlTXVwREFUR0x2YTh4QkxmWldKc3N3MlJtYWNtSGJiU2NkTFZLUiI7czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6Mzg6Imh0dHA6Ly8xMjcuMC4wLjE6ODAwMC9wcm9kdWN0LWRldGFpbC8xIjt9czo2OiJfZmxhc2giO2E6Mjp7czozOiJvbGQiO2E6MDp7fXM6MzoibmV3IjthOjA6e319fQ==', 1623588407),
-('pumdGzwf0UNqejhFurOgdMgIC2OsJpIj42XgqyXY', 1, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.77 Safari/537.36 Edg/91.0.864.41', 'YTo1OntzOjY6Il90b2tlbiI7czo0MDoibHphR2VKWmtQMDEwYUZNeHMwOE1PbnJpWXE1dmE3dkxaYmRoTHR4RSI7czo2OiJfZmxhc2giO2E6Mjp7czozOiJvbGQiO2E6MDp7fXM6MzoibmV3IjthOjA6e319czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6MjE6Imh0dHA6Ly8xMjcuMC4wLjE6ODAwMCI7fXM6NTA6ImxvZ2luX3dlYl81OWJhMzZhZGRjMmIyZjk0MDE1ODBmMDE0YzdmNThlYTRlMzA5ODlkIjtpOjE7czoxNzoicGFzc3dvcmRfaGFzaF93ZWIiO3M6NjA6IiQyeSQxMCRqRFQ4cFVtVWZWSFFrWC9HRnUubFMua1VRQTNwbFRhU0p5VkFpakoyVk42RmlWSHdvdzhaVyI7fQ==', 1623582892);
+('rRhMUjrpF2K37h49taDwX1EHDWf8uO7NjjXnvyJU', NULL, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.101 Safari/537.36 Edg/91.0.864.48', 'YTozOntzOjY6Il90b2tlbiI7czo0MDoiV0hKYUxETGhjQmwxTWh1cDU0MXJsWTBKM25nc1YzSnV2ZHhKWHB3ZyI7czo2OiJfZmxhc2giO2E6Mjp7czozOiJvbGQiO2E6MDp7fXM6MzoibmV3IjthOjA6e319czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6MjE6Imh0dHA6Ly8xMjcuMC4wLjE6ODAwMCI7fX0=', 1623639986),
+('ZBZZzv1ecWTnzLBMJyL43Qi0c7Ml0JCRP9xcik9W', NULL, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.101 Safari/537.36 Edg/91.0.864.48', 'YTozOntzOjY6Il90b2tlbiI7czo0MDoiM2hLR0M5bFloYWRMTGdrNnlaaVZKdlZLVHNzQ1ZZUG9pbkFZWmptZiI7czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6MjE6Imh0dHA6Ly8xMjcuMC4wLjE6ODAwMCI7fXM6NjoiX2ZsYXNoIjthOjI6e3M6Mzoib2xkIjthOjA6e31zOjM6Im5ldyI7YTowOnt9fX0=', 1623632527);
 
 -- --------------------------------------------------------
 
@@ -205,7 +205,8 @@ CREATE TABLE `transactions` (
 --
 
 INSERT INTO `transactions` (`id`, `seller_nrp`, `user_id`, `product_id`, `status`, `date`) VALUES
-(2, 123, 2, 1, 1, '2021-06-13');
+(2, 123, 2, 1, 0, '2021-06-13'),
+(3, 123, 2, 2, 1, '2021-06-13');
 
 -- --------------------------------------------------------
 
@@ -233,7 +234,7 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `name`, `email`, `email_verified_at`, `password`, `two_factor_secret`, `two_factor_recovery_codes`, `remember_token`, `current_team_id`, `profile_photo_path`, `created_at`, `updated_at`) VALUES
-(1, 'Saifudin udin', 's@gmail.com', NULL, '$2y$10$jDT8pUmUfVHQkX/GFu.lS.kUQA3plTaSJyVAijJ2VN6FiVHwow8ZW', NULL, NULL, 'T8WOjXBIaLqT28lB71uf5AiBCYHgo00op9eydtRqmDQ0WRbFkovEMULMvnN5', NULL, 'profile-photos/0zs6Ew0v6kfZM42bvJL3bFoGyHC3dJb3fDyukFui.png', '2021-06-13 00:11:25', '2021-06-13 00:30:18'),
+(1, 'Saifudin udin', 's@gmail.com', NULL, '$2y$10$jDT8pUmUfVHQkX/GFu.lS.kUQA3plTaSJyVAijJ2VN6FiVHwow8ZW', NULL, NULL, '08U0CNCSjUJJNhxc9Zl3jmqVh23GMUTycmiN66Sr7TrQzAB4MzYkiIoKCAUg', NULL, 'profile-photos/0zs6Ew0v6kfZM42bvJL3bFoGyHC3dJb3fDyukFui.png', '2021-06-13 00:11:25', '2021-06-13 00:30:18'),
 (2, 'Saifudin', 'ss@gmail.com', NULL, '$2y$10$8wFMaO6PaUu6jlrNmYpfHOdDVsQowOX6IQ9ef7GgA39Tm3jEfolR2', NULL, NULL, NULL, NULL, NULL, '2021-06-13 02:30:44', '2021-06-13 02:30:44');
 
 --
@@ -350,7 +351,7 @@ ALTER TABLE `products`
 -- AUTO_INCREMENT for table `transactions`
 --
 ALTER TABLE `transactions`
-  MODIFY `id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT for table `users`
