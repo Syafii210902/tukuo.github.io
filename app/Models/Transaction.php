@@ -8,5 +8,9 @@ use Illuminate\Database\Eloquent\Model;
 class Transaction extends Model
 {
     use HasFactory;
-    // protected $table = 'transactions';
+
+    public function product()
+    {
+        return $this->belongsTo(Product::class);
+    }
 }

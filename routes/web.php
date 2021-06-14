@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\ProductController;
+use App\Http\Controllers\TransactionController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -23,9 +24,7 @@ Route::get('products', [ProductController::class, 'product']);
 Route::get('products/{category:name}', [ProductController::class, 'product']);
 Route::get('product-detail/{product:id}', [ProductController::class, 'productDetail']);
 
-Route::get('cart', function () {
-    return view('cart');
-});
+Route::get('cart', [TransactionController::class, 'cart']);
 
 Route::get('checkout', function () {
     return view('checkout');

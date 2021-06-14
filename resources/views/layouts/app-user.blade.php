@@ -87,12 +87,13 @@
                     <div class="col-lg-2 col-12 col-sm-6">
                         <div class="right-icons pull-right d-none d-lg-block">
                             <div class="single-icon wishlist">
-                                <a href="#"><i class="fa fa-heart-o fa-2x"></i></a>
-                                <span class="badge badge-default">5</span>
+                                {{-- <a href="#"><i class="fa fa-heart-o fa-2x"></i></a>
+                                <span class="badge badge-default">5</span> --}}
                             </div>
                             <div class="single-icon shopping-cart">
                                 <a href="cart"><i class="fa fa-shopping-cart fa-2x"></i></a>
-                                <span class="badge badge-default">4</span>
+                                <span
+                                    class="badge badge-default">{{Auth::user() ? Auth::user()->transactions->count():''}}</span>
                             </div>
                         </div>
                     </div>

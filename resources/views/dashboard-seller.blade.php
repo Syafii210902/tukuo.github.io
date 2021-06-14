@@ -37,14 +37,14 @@
     <meta property="og:description" content="Start your development with a Dashboard for Bootstrap 4." />
     <meta property="og:site_name" content="Creative Tim" />
     <!-- Favicon -->
-    <link rel="icon" href="./assets/img/brand/favicon.png" type="image/png">
+    <link rel="icon" href="/assets/img/brand/favicon.png" type="image/png">
     <!-- Fonts -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700">
     <!-- Icons -->
-    <link rel="stylesheet" href="./assets/vendor/nucleo/css/nucleo.css" type="text/css">
-    <link rel="stylesheet" href="./assets/vendor/@fortawesome/fontawesome-free/css/all.min.css" type="text/css">
+    <link rel="stylesheet" href="/assets/vendor/nucleo/css/nucleo.css" type="text/css">
+    <link rel="stylesheet" href="/assets/vendor/@fortawesome/fontawesome-free/css/all.min.css" type="text/css">
     <!-- Argon CSS -->
-    <link rel="stylesheet" href="./assets/css/argon.min-v=1.0.0.css" type="text/css">
+    <link rel="stylesheet" href="/assets/css/argon.min-v=1.0.0.css" type="text/css">
     <!-- Google Tag Manager -->
     <script>
         (function (w, d, s, l, i) {
@@ -77,7 +77,7 @@
             <!-- Brand -->
             <div class="sidenav-header d-flex align-items-center">
                 <a class="navbar-brand" href="./">
-                    <img src="./assets/img/brand/blue.png" class="navbar-brand-img" alt="...">
+                    <img src="/assets/img/brand/blue.png" class="navbar-brand-img" alt="...">
                 </a>
                 <div class="ml-auto">
                     <!-- Sidenav toggler -->
@@ -100,7 +100,7 @@
                             <a class="nav-link" href="tables.html#navbar-dashboards" data-toggle="collapse"
                                 role="button" aria-expanded="false" aria-controls="navbar-dashboards">
                                 <i class="ni ni-shop text-primary"></i>
-                                <span class="nav-link-text">Dashboards</span>
+                                <span class="nav-link-text">your Products</span>
                             </a>
                             <div class="collapse" id="navbar-dashboards">
                                 <ul class="nav nav-sm flex-column">
@@ -117,7 +117,7 @@
                             <a class="nav-link" href="tables.html#navbar-examples" data-toggle="collapse" role="button"
                                 aria-expanded="false" aria-controls="navbar-examples">
                                 <i class="ni ni-ungroup text-orange"></i>
-                                <span class="nav-link-text">Examples</span>
+                                <span class="nav-link-text">Downloads</span>
                             </a>
                             <div class="collapse" id="navbar-examples">
                                 <ul class="nav nav-sm flex-column">
@@ -265,37 +265,7 @@
                             </a>
                         </li>
                     </ul>
-                    <!-- Divider -->
-                    <hr class="my-3">
                     <!-- Heading -->
-                    <h6 class="navbar-heading p-0 text-muted">Documentation</h6>
-                    <!-- Navigation -->
-                    <ul class="navbar-nav mb-md-3">
-                        <li class="nav-item">
-                            <a class="nav-link" href="../../docs/getting-started/overview.html" target="_blank">
-                                <i class="ni ni-spaceship"></i>
-                                <span class="nav-link-text">Getting started</span>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="../../docs/foundation/colors.html" target="_blank">
-                                <i class="ni ni-palette"></i>
-                                <span class="nav-link-text">Foundation</span>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="../../docs/components/alerts.html" target="_blank">
-                                <i class="ni ni-ui-04"></i>
-                                <span class="nav-link-text">Components</span>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="../../docs/plugins/charts.html" target="_blank">
-                                <i class="ni ni-chart-pie-35"></i>
-                                <span class="nav-link-text">Plugins</span>
-                            </a>
-                        </li>
-                    </ul>
                 </div>
             </div>
         </div>
@@ -357,7 +327,7 @@
                                         <div class="row align-items-center">
                                             <div class="col-auto">
                                                 <!-- Avatar -->
-                                                <img alt="Image placeholder" src="./assets/img/theme/team-1.jpg"
+                                                <img alt="Image placeholder" src="/assets/img/theme/team-1.jpg"
                                                     class="avatar rounded-circle">
                                             </div>
                                             <div class="col ml--2">
@@ -377,7 +347,7 @@
                                         <div class="row align-items-center">
                                             <div class="col-auto">
                                                 <!-- Avatar -->
-                                                <img alt="Image placeholder" src="./assets/img/theme/team-2.jpg"
+                                                <img alt="Image placeholder" src="/assets/img/theme/team-2.jpg"
                                                     class="avatar rounded-circle">
                                             </div>
                                             <div class="col ml--2">
@@ -397,7 +367,7 @@
                                         <div class="row align-items-center">
                                             <div class="col-auto">
                                                 <!-- Avatar -->
-                                                <img alt="Image placeholder" src="./assets/img/theme/team-3.jpg"
+                                                <img alt="Image placeholder" src="/assets/img/theme/team-3.jpg"
                                                     class="avatar rounded-circle">
                                             </div>
                                             <div class="col ml--2">
@@ -437,7 +407,7 @@
                                         <div class="row align-items-center">
                                             <div class="col-auto">
                                                 <!-- Avatar -->
-                                                <img alt="Image placeholder" src="./assets/img/theme/team-5.jpg"
+                                                <img alt="Image placeholder" src="/assets/img/theme/team-5.jpg"
                                                     class="avatar rounded-circle">
                                             </div>
                                             <div class="col ml--2">
@@ -530,7 +500,7 @@
                                 </a>
                                 <a href="tables.html#!" class="dropdown-item">
                                     <i class="ni ni-settings-gear-65"></i>
-                                    <span>Settings</span>
+                                    <span>Become an Author</span>
                                 </a>
                                 <a href="tables.html#!" class="dropdown-item">
                                     <i class="ni ni-calendar-grid-58"></i>
@@ -772,16 +742,16 @@
     </div>
     <!-- Argon Scripts -->
     <!-- Core -->
-    <script src="./assets/vendor/jquery/dist/jquery.min.js"></script>
-    <script src="./assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="./assets/vendor/js-cookie/js.cookie.js"></script>
-    <script src="./assets/vendor/jquery.scrollbar/jquery.scrollbar.min.js"></script>
-    <script src="./assets/vendor/jquery-scroll-lock/dist/jquery-scrollLock.min.js"></script>
-    <script src="./assets/vendor/lavalamp/js/jquery.lavalamp.min.js"></script>
+    <script src="/assets/vendor/jquery/dist/jquery.min.js"></script>
+    <script src="/assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/assets/vendor/js-cookie/js.cookie.js"></script>
+    <script src="/assets/vendor/jquery.scrollbar/jquery.scrollbar.min.js"></script>
+    <script src="/assets/vendor/jquery-scroll-lock/dist/jquery-scrollLock.min.js"></script>
+    <script src="/assets/vendor/lavalamp/js/jquery.lavalamp.min.js"></script>
     <!-- Argon JS -->
-    <script src="./assets/js/argon.min-v=1.0.0.js"></script>
+    <script src="/assets/js/argon.min-v=1.0.0.js"></script>
     <!-- Demo JS - remove this in your project -->
-    <script src="./assets/js/demo.min.js"></script>
+    <script src="/assets/js/demo.min.js"></script>
     <script>
         // Example starter JavaScript for disabling form submissions if there are invalid fields
         (function () {
