@@ -29,7 +29,8 @@
                                 <a href='{{$item->product->link}}' target='blank' class=" demo"><span><i
                                             class="fa fa-desktop"></i>
                                         Demo</span></a>
-                                <a href="#" class=" download bg-green"><span><i
+                                <a href="{{'/assets/img/seller/'.$item->product->main_image}}"
+                                    class=" download bg-green" download><span><i
                                             class="fa fa-download"></i>Download</span></a>
                             </div>
                         </div>
