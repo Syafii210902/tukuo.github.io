@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jun 15, 2021 at 11:22 AM
+-- Generation Time: Jun 15, 2021 at 07:34 PM
 -- Server version: 10.4.13-MariaDB
 -- PHP Version: 7.4.7
 
@@ -127,6 +127,7 @@ CREATE TABLE `products` (
   `slide_image3` varchar(255) DEFAULT NULL,
   `description` text DEFAULT NULL,
   `price` varchar(255) NOT NULL,
+  `link` text DEFAULT NULL,
   `created_at` timestamp NULL DEFAULT NULL,
   `updated_at` timestamp NULL DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
@@ -135,8 +136,9 @@ CREATE TABLE `products` (
 -- Dumping data for table `products`
 --
 
-INSERT INTO `products` (`id`, `seller_nrp`, `category_id`, `name`, `main_image`, `slide_image1`, `slide_image2`, `slide_image3`, `description`, `price`, `created_at`, `updated_at`) VALUES
-(23, 222, 1, 'jhgfd', '1-1623744468-erola.png', '1-1623744468-Gemastik12-Logo-color.png', '1-1623744468-images.png', '1-1623744468-Screenshot (68).png', 'fgh', '987', '2021-06-15 01:07:48', '2021-06-15 01:07:48');
+INSERT INTO `products` (`id`, `seller_nrp`, `category_id`, `name`, `main_image`, `slide_image1`, `slide_image2`, `slide_image3`, `description`, `price`, `link`, `created_at`, `updated_at`) VALUES
+(23, 99, 1, 'jhgfd', '1-1623744468-erola.png', '1-1623744468-Gemastik12-Logo-color.png', '1-1623744468-images.png', '1-1623744468-Screenshot (68).png', 'fgh', '987', 'https://www.wix.com/mystunningwebsites/illustration?utm_source=affiliate&utm_medium=paid_referral&utm_campaign=af_https://colorlib.com&experiment_id=cake_87221505^108', '2021-06-15 01:07:48', '2021-06-15 01:07:48'),
+(25, 99, 1, 'statusfgb', '8-1623768644-xampp-logo-png-transparent.png', '8-1623768644-unesa.jpg', '8-1623768644-Screenshot (68).png', '8-1623768644-erola.png', 'gfhn', '4567', NULL, '2021-06-15 07:50:44', '2021-06-15 07:50:44');
 
 -- --------------------------------------------------------
 
@@ -159,7 +161,7 @@ CREATE TABLE `sellers` (
 --
 
 INSERT INTO `sellers` (`nrp`, `user_id`, `no_telp`, `no_reg`, `saldo`, `created_at`, `updated_at`) VALUES
-(222, 1, '+6285800561115', '44', NULL, '2021-06-14 02:05:36', '2021-06-14 02:05:36');
+(99, 8, '+6285655540468', '123-4545-234545', NULL, '2021-06-15 07:18:47', '2021-06-15 07:18:47');
 
 -- --------------------------------------------------------
 
@@ -181,7 +183,9 @@ CREATE TABLE `sessions` (
 --
 
 INSERT INTO `sessions` (`id`, `user_id`, `ip_address`, `user_agent`, `payload`, `last_activity`) VALUES
-('m9jaIiNP5yTnVxlycODUhQR3BH1S13UjwgfzPG48', 1, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.101 Safari/537.36 Edg/91.0.864.48', 'YTo1OntzOjY6Il90b2tlbiI7czo0MDoiaDVaRldaY1JjSkNEOGVjUkhHS0U2WmZVaHptVVN6Z1JRRXFCZFdwTSI7czo2OiJfZmxhc2giO2E6Mjp7czozOiJvbGQiO2E6MDp7fXM6MzoibmV3IjthOjA6e319czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6MjY6Imh0dHA6Ly8xMjcuMC4wLjE6ODAwMC9jYXJ0Ijt9czo1MDoibG9naW5fd2ViXzU5YmEzNmFkZGMyYjJmOTQwMTU4MGYwMTRjN2Y1OGVhNGUzMDk4OWQiO2k6MTtzOjE3OiJwYXNzd29yZF9oYXNoX3dlYiI7czo2MDoiJDJ5JDEwJGpEVDhwVW1VZlZIUWtYL0dGdS5sUy5rVVFBM3BsVGFTSnlWQWlqSjJWTjZGaVZId293OFpXIjt9', 1623748909);
+('GAS2gbbeAXg9LL7jIwM41xNPugRAN24EZxfRT5Wo', 9, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.101 Safari/537.36 Edg/91.0.864.48', 'YTo1OntzOjY6Il90b2tlbiI7czo0MDoidThFWHdreUY5T2VSNmQ2c0E1a210azZvMTl3OXk5eTdrVDhXRmVONSI7czo2OiJfZmxhc2giO2E6Mjp7czozOiJvbGQiO2E6MDp7fXM6MzoibmV3IjthOjA6e319czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6Mzk6Imh0dHA6Ly8xMjcuMC4wLjE6ODAwMC9wcm9kdWN0LWRldGFpbC8yMyI7fXM6NTA6ImxvZ2luX3dlYl81OWJhMzZhZGRjMmIyZjk0MDE1ODBmMDE0YzdmNThlYTRlMzA5ODlkIjtpOjk7czoxNzoicGFzc3dvcmRfaGFzaF93ZWIiO3M6NjA6IiQyeSQxMCRJVy95SXB3WVY5ZWFUS25Wa0sudk9PejZZQWJQWi9HRm1oLk1xVzNqcjZSN2NsOG00Zjh0RyI7fQ==', 1623778412),
+('kH3DxzeF8jryaErfcvn8HbfpwVR6K5a8YK2AUXtc', 10, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36', 'YTo1OntzOjY6Il90b2tlbiI7czo0MDoibFc1SGd4cTJuRERDVGhCT1hSSTkyaWM3UFFDUjR3VzVXRzExSWZZQSI7czo2OiJfZmxhc2giO2E6Mjp7czozOiJvbGQiO2E6MDp7fXM6MzoibmV3IjthOjA6e319czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6MjY6Imh0dHA6Ly9sb2NhbGhvc3Q6ODAwMC9jYXJ0Ijt9czo1MDoibG9naW5fd2ViXzU5YmEzNmFkZGMyYjJmOTQwMTU4MGYwMTRjN2Y1OGVhNGUzMDk4OWQiO2k6MTA7czoxNzoicGFzc3dvcmRfaGFzaF93ZWIiO3M6NjA6IiQyeSQxMCR6WUZhYVZnVGNoakVRNXhQZU9DSC51WHNJRFBRTkNqZkxxZy5HOFJzTVJGLzBmMHJkaGROTyI7fQ==', 1623777432),
+('L4hBJRFkapi2OckjFtKFRzxHHsXxYu5Mm6tUbO1z', 9, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.106 Safari/537.36', 'YTo1OntzOjY6Il90b2tlbiI7czo0MDoidEYyaG8xN2lrUW9tNFNhSzFkUzR0V3NSWXpLRWxUZlIyUnlESFI4TCI7czo2OiJfZmxhc2giO2E6Mjp7czozOiJvbGQiO2E6MDp7fXM6MzoibmV3IjthOjA6e319czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6MjY6Imh0dHA6Ly8xMjcuMC4wLjE6ODAwMC9jYXJ0Ijt9czo1MDoibG9naW5fd2ViXzU5YmEzNmFkZGMyYjJmOTQwMTU4MGYwMTRjN2Y1OGVhNGUzMDk4OWQiO2k6OTtzOjE3OiJwYXNzd29yZF9oYXNoX3dlYiI7czo2MDoiJDJ5JDEwJElXL3lJcHdZVjllYVRLblZrSy52T096NllBYlBaL0dGbWguTXFXM2pyNlI3Y2w4bTRmOHRHIjt9', 1623773267);
 
 -- --------------------------------------------------------
 
@@ -193,10 +197,20 @@ CREATE TABLE `transactions` (
   `id` int(11) UNSIGNED NOT NULL,
   `user_id` bigint(20) UNSIGNED DEFAULT NULL,
   `product_id` int(11) UNSIGNED DEFAULT NULL,
-  `status` tinyint(1) DEFAULT NULL,
+  `status` varchar(2) DEFAULT NULL,
+  `payment` text DEFAULT NULL,
   `created_at` timestamp NULL DEFAULT NULL,
   `updated_at` timestamp NULL DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `transactions`
+--
+
+INSERT INTO `transactions` (`id`, `user_id`, `product_id`, `status`, `payment`, `created_at`, `updated_at`) VALUES
+(27, 9, 23, '0', NULL, '2021-06-15 09:16:39', '2021-06-15 10:14:40'),
+(30, 10, 23, '0', NULL, '2021-06-15 10:17:11', '2021-06-15 10:17:11'),
+(31, 9, 25, '1', '9-1623777450-1e9a64617c0cd49895a6b0a20f98b4f8_football-silhouette-clip-art-clipart-futsal_890-1600.jpeg', '2021-06-15 10:17:12', '2021-06-15 10:22:13');
 
 -- --------------------------------------------------------
 
@@ -224,7 +238,11 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `name`, `email`, `email_verified_at`, `password`, `two_factor_secret`, `two_factor_recovery_codes`, `remember_token`, `current_team_id`, `profile_photo_path`, `created_at`, `updated_at`) VALUES
-(1, 'sai', 's@gmail.com', NULL, '$2y$10$jDT8pUmUfVHQkX/GFu.lS.kUQA3plTaSJyVAijJ2VN6FiVHwow8ZW', NULL, NULL, 'nWpAbQNg9EbM9A1as0JE8ZYBk116qa2YVVQJeaTNZHZxIglhbRkZBaQly0Zr', NULL, 'profile-photos/0zs6Ew0v6kfZM42bvJL3bFoGyHC3dJb3fDyukFui.png', '2021-06-13 00:11:25', '2021-06-13 00:30:18');
+(1, 'sai', 's@gmail.com', NULL, '$2y$10$jDT8pUmUfVHQkX/GFu.lS.kUQA3plTaSJyVAijJ2VN6FiVHwow8ZW', NULL, NULL, 'ebQhJrzSzhCdrwOC8J0uhnKiLmQ7w1xN2UdCEeOeZnpjd5X9oY2AN2wvRn0r', NULL, 'profile-photos/0zs6Ew0v6kfZM42bvJL3bFoGyHC3dJb3fDyukFui.png', '2021-06-13 00:11:25', '2021-06-13 00:30:18'),
+(7, 'pens', 'pens@gmail.com', NULL, '$2y$10$KaHFyZvV7Tk4UAmn6uufeuXj.cD4gsNOl7CP0I6LqBRAIL3/p1cLy', NULL, NULL, NULL, NULL, NULL, '2021-06-15 06:11:08', '2021-06-15 06:11:08'),
+(8, 'seller', 'seller@gmail.com', NULL, '$2y$10$nHaI.yH0s.dl1rLWlpNcYu51K4X252AqRMRXmQDOBnxYmkfLLKUxK', NULL, NULL, NULL, NULL, NULL, '2021-06-15 07:18:11', '2021-06-15 07:18:11'),
+(9, 'user', 'user@gmail.com', NULL, '$2y$10$IW/yIpwYV9eaTKnVkK.vOOz6YAbPZ/GFmh.MqW3jr6R7cl8m4f8tG', NULL, NULL, NULL, NULL, NULL, '2021-06-15 07:20:11', '2021-06-15 07:20:11'),
+(10, 'Lula Rania', 'salsabillalula@gmail.com', NULL, '$2y$10$zYFaaVgTchjEQ5xPeOCH.uXsIDPQNCjfLqg.G8RsMRF/0f0rdhdNO', NULL, NULL, NULL, NULL, NULL, '2021-06-15 08:06:27', '2021-06-15 08:06:27');
 
 --
 -- Indexes for dumped tables
@@ -333,19 +351,19 @@ ALTER TABLE `personal_access_tokens`
 -- AUTO_INCREMENT for table `products`
 --
 ALTER TABLE `products`
-  MODIFY `id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=24;
+  MODIFY `id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=26;
 
 --
 -- AUTO_INCREMENT for table `transactions`
 --
 ALTER TABLE `transactions`
-  MODIFY `id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+  MODIFY `id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=32;
 
 --
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 
 --
 -- Constraints for dumped tables
