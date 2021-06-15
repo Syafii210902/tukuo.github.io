@@ -19,28 +19,30 @@
                     <tr>
                         <th>No</th>
                         <th>Name</th>
+                        <th>Buyer</th>
                         <th>Date</th>
                         <th></th>
                     </tr>
                 </thead>
                 <tbody>
+                    {{-- {{dd(Auth::user()->transactions)}} --}}
+                    @foreach (Auth::user()->transactions as $index => $item)
                     <tr>
                         <td class="table-user">
-                            <b>1</b>
+                            <b>{{$index+1}}</b>
                         </td>
                         <td>
-                            <a href="tables.html#!" class="font-weight-bold">Argon Dashboard PRO</a>
+                            <a href="{{'/product-detail/'.$item->product->id}}" target='blank'
+                                class="font-weight-bold">{{$item->product->name}}</a>
                         </td>
                         <td>
-                            <span class="text-muted">10/09/2018</span>
+                            <span class="text-muted">{{$item->user->name}}</span>
                         </td>
-                        <td class="table-actions text-right">
-                            <a href="tables.html#!" class="table-action" data-toggle="tooltip"
-                                data-original-title="Edit product">
-                                <i class="fas fa-user-edit"></i>
-                            </a>
+                        <td>
+                            <span class="text-muted">{{$item->product->created_at}}</span>
                         </td>
                     </tr>
+                    @endforeach
                 </tbody>
             </table>
         </div>

@@ -13,12 +13,13 @@
                 <div class="col-lg-4 col-md-6 col-12">
                     <div class="single-product">
                         <div class="product-img">
-                            <a href={{'product-detail/'.$item->id}}>
-                                <img src="/assets/img/products/p5.png" class="img-fluid" />
+                            <a href={{'/product-detail/'.$item->product->id}}>
+                                <img src="{{'/assets/img/seller/'.$item->product->main_image}}" class="img-fluid"
+                                    style='height:330px' />
                             </a>
                         </div>
                         <div class="product-content">
-                            <h3><a href={{'product-detail/'.$item->id}}>{{$item->product->name}}</a></h3>
+                            <h3><a href={{'/product-detail/'.$item->id}}>{{$item->product->name}}</a></h3>
                             <div class="product-desc overflow-ellipsis">
                                 <span>{{ Str::limit($item->product->description, 40, $end='.......')}}</span>
 

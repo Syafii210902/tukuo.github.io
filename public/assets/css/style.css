@@ -17,6 +17,7 @@ textarea {
     .navbar-expand-lg .navbar-nav .nav-link {
         padding-left: 0;
     }
+
     .breadcrumb-section .breadcrumb {
         padding-left: 0;
     }
@@ -874,4 +875,13 @@ th.shoping__product {
     font-weight: 700;
     background: #7fad39;
     letter-spacing: 2px;
+}
+
+
+/* ------------------------
+css dashboard
+------------------------ */
+.file {
+    visibility: hidden;
+    position: absolute;
 }

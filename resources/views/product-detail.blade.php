@@ -19,11 +19,15 @@
                 <div id="product-images" class="carousel slide" data-ride="carousel">
                     <!-- slides -->
                     <div class="carousel-inner">
-                        <div class="carousel-item active"> <img src="/assets/img/products/p5.png" alt="Product 1">
+                        <div class="carousel-item active"> <img src='{{"/assets/img/seller/".$product->main_image}}'
+                                alt="Product 1" style='height:400px'>
                         </div>
-                        <div class="carousel-item"> <img src="/assets/img/products/p5.png" alt="Product 2"> </div>
-                        <div class="carousel-item"> <img src="/assets/img/products/p5.png" alt="Product 3"> </div>
-                        <div class="carousel-item"> <img src="/assets/img/products/p5.png" alt="Product 4"> </div>
+                        <div class="carousel-item"> <img src='{{"/assets/img/seller/".$product->slide_image1}}'
+                                alt="Product 2" style='height:400px'> </div>
+                        <div class="carousel-item"> <img src='{{"/assets/img/seller/".$product->slide_image2}}'
+                                alt="Product 3" style='height:400px'> </div>
+                        <div class="carousel-item"> <img src='{{"/assets/img/seller/".$product->slide_image3}}'
+                                alt="Product 4" style='height:400px'> </div>
                     </div>
                     <!-- Left right -->
                     <a class="carousel-control-prev" href="#product-images" data-slide="prev"> <span
@@ -34,20 +38,24 @@
                     <ol class="carousel-indicators list-inline">
                         <li class="list-inline-item active">
                             <a id="carousel-selector-0" class="selected" data-slide-to="0"
-                                data-target="#product-images"> <img src="/assets/img/products/p5.png" class="img-fluid">
+                                data-target="#product-images"> <img src='{{"/assets/img/seller/".$product->main_image}}'
+                                    class="img-fluid" style='height:70px'>
                             </a>
                         </li>
                         <li class="list-inline-item">
                             <a id="carousel-selector-1" data-slide-to="1" data-target="#product-images"> <img
-                                    src="/assets/img/products/p5.png" class="img-fluid"> </a>
+                                    src='{{"/assets/img/seller/".$product->slide_image1}}' class="img-fluid"
+                                    style='height:70px'> </a>
                         </li>
                         <li class="list-inline-item">
                             <a id="carousel-selector-2" data-slide-to="2" data-target="#product-images"> <img
-                                    src="/assets/img/products/p5.png" class="img-fluid"> </a>
+                                    src='{{"/assets/img/seller/".$product->slide_image2}}' class="img-fluid"
+                                    style='height:70px'> </a>
                         </li>
                         <li class="list-inline-item">
                             <a id="carousel-selector-3" data-slide-to="3" data-target="#product-images"> <img
-                                    src="/assets/img/products/p5.png" class="img-fluid"> </a>
+                                    src='{{"/assets/img/seller/".$product->slide_image3}}' class="img-fluid"
+                                    style='height:70px'> </a>
                         </li>
                     </ol>
                 </div>
@@ -144,27 +152,9 @@
         <div class="row mt-4">
             @foreach ($productAll as $item)
             <div class="col-lg-4 col-md-6 col-12">
-                <div class="single-product">
-                    <div class="product-img">
-                        <a href={{'product-detail/'. $item->id}}>
-                            <img src="/assets/img/products/p5.png" class="img-fluid" />
-                        </a>
-                    </div>
-                    <div class="product-content">
-                        <h3><a href={{'product-detail/'.$item->id}}>{{$item->name}}</a></h3>
-                        <div class="product-desc">
-                            <span>{{ Str::limit($item->description, 40, $end='.......')}}</span>
-                        </div>
-                        <div class="d-flex product-button">
-                            <a href="#" class=" demo"><span><i class="fa fa-desktop"></i> Demo</span></a>
-                            <a href="#" class=" download"><span><i class="fa fa-download"></i> Download</span></a>
-                            <a href="#" class=" buy"><span><i class="fa fa-shopping-cart"></i> Buy</span></a>
-                        </div>
-                    </div>
-                </div>
+                @include('product-card')
             </div>
             @endforeach
-
         </div>
     </div>
 </section>

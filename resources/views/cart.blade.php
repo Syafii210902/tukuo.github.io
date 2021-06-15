@@ -33,12 +33,17 @@
                         <tbody>
                             @foreach ($user->transactions->where('status','0') as $item)
                             <tr>
-                                <td class="shoping__cart__item">
-                                    <img src="assets/img/products/p5.png" alt="">
-                                    <h5>{{$item->product->name}}</h5>
+                                <td class="shoping__cart__item d-flex align-items-center">
+                                    <img src="{{'/assets/img/seller/'.$item->product->main_image}}" alt=""
+                                        style='height:100px'>
+                                    <div>
+                                        <h5><span class=" text-blue">Name :</span> {{$item->product->name}}</h5><br>
+                                        <small><span class=" text-blue">Author :</span>
+                                            {{$item->product->seller->user->name}}</small>
+                                    </div>
                                 </td>
                                 <td class="shoping__cart__price">
-                                    {{$item->product->price}}
+                                    RP. {{$item->product->price}},00
                                 </td>
                                 {{-- <td class="shoping__cart__quantity">
                                     <div class="quantity">
@@ -68,9 +73,9 @@
                     <h5>Cart Total</h5>
                     <ul>
                         {{-- <li>Subtotal <span>$454.98</span></li> --}}
-                        <li>Total <span>$454.98</span></li>
+                        <li>Total <span>RP. - ,00</span></li>
                     </ul>
-                    <a href="#" class="primary-btn">PROCEED TO CHECKOUT</a>
+                    <a href="#" class="primary-btn" onclick="checkOut()">PROCEED TO CHECKOUT</a>
                 </div>
             </div>
         </div>

@@ -10,6 +10,7 @@ class UserController extends Controller
     public function store(Request $request)
     {
         $attr = $request->all();
+        mkdir(asset('/asset/img/seller/' . 'tess'));
         Seller::create($attr);
         return redirect('/dashboard/products');
     }

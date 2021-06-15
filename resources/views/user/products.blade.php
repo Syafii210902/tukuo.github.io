@@ -11,7 +11,7 @@
                     <h3 class="mb-0">Your Product</h3>
                 </div>
                 <div class="col-6 text-right">
-                    <a href="#" class="btn btn-sm btn-neutral btn-round btn-icon" onclick="$('#form-product').toggle()">
+                    <a href="/product/create" class="btn btn-sm btn-neutral btn-round btn-icon">
                         <span class="btn-inner--icon"><i class="fas fa-plus-circle"></i></span>
                         <span class="btn-inner--text">Add</span>
                     </a>
@@ -30,14 +30,16 @@
                     </tr>
                 </thead>
                 <tbody>
+
+                    {{-- {{dd(Auth::user()->seller->products)}} --}}
+                    @foreach (Auth::user()->seller->products as $index => $item)
                     <tr>
-                        {{-- {{dd(Auth::user()->seller->products)}} --}}
-                        @foreach (Auth::user()->seller->products as $index => $item)
                         <td class="table-user">
                             <b>{{$index+1}}</b>
                         </td>
                         <td>
-                            <a href="#" class="font-weight-bold">{{$item->name}}</a>
+                            <a href="{{'/product-detail/'.$item->id}}" target='blank'
+                                class="font-weight-bold">{{$item->name}}</a>
                         </td>
                         <td>
                             <span class="text-muted">{{$item->created_at}}</span>
@@ -46,21 +48,20 @@
                             <a href="#" class="table-action">
                                 <i class="fas fa-edit"> Edit</i>
                             </a>
-                            <a href="#" class="table-action table-action-delete">
+                            <a href="/product/{{$item->id}}/delete" class="table-action table-action-delete">
                                 <i class="fa fa-trash"> Delete</i>
                             </a>
                             <a href="#" class="table-action">
                                 <i class="fas fa-arrow-alt-circle-up"> Preview</i>
                             </a>
                         </td>
-                        @endforeach
                     </tr>
+                    @endforeach
+
                 </tbody>
             </table>
         </div>
     </div>
 </div>
-
-@include('user.form-product')
 
 @endsection

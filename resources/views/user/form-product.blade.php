@@ -1,5 +1,5 @@
 <!-- Add Categories -->
-<div class="container-fluid d-lg-none" id="form-product">
+<div class="container-fluid" id="form-product">
     <div class="mt--10">
         <div class="card">
             <div class="card-body">

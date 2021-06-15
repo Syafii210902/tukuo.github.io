@@ -23,33 +23,33 @@ Route::get('/', HomeController::class);
 
 Route::post('/seller/store', [UserController::class, 'store']);
 
+Route::get('product/create', [ProductController::class, 'create']);
+Route::post('product/store', [ProductController::class, 'store']);
+Route::get('product/{product:id}/delete', [ProductController::class, 'destroy']);
+
 Route::get('products', [ProductController::class, 'product']);
 Route::get('products/{category:name}', [ProductController::class, 'product']);
 Route::get('product-detail/{product:id}', [ProductController::class, 'productDetail']);
-// Route::get('product-detail/{product:id}', [ProductController::class, 'productDetail']);
+
+// Route::patch('product/edit', [ProductController::class, 'edit']);
 
 Route::get('cart', [TransactionController::class, 'cart']);
+Route::get('cart/{product:id}', [TransactionController::class, 'addToCart']);
 
 Route::get('checkout', function () {
     return view('checkout');
 });
 
-Route::get('seller', function () {
-    return view('tables');
-});
 
 Route::get('dashboard', function () {
     return view('user.index');
 });
-
 Route::get('dashboard/downloads', function () {
     return view('user.downloads');
 });
-
 Route::get('dashboard/products', function () {
     return view('user.products');
 });
-
 Route::get('dashboard/transactions', function () {
     return view('user.transactions');
 });

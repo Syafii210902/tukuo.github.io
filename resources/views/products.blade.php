@@ -52,30 +52,9 @@
                     </div>
                 </div>
                 <div class="row">
-                    {{-- {{dd($category->products-)}} --}}
                     @foreach ($category->products as $item)
                     <div class="col-lg-6 col-12">
-                        <div class="single-product">
-                            <div class="product-img">
-                                <a href={{'/product-detail/'.$item->id}}>
-                                    <img src="/assets/img/products/p5.png" class="img-fluid" />
-                                </a>
-                            </div>
-                            <div class="product-content">
-                                <h3><a href={{'/product-detail/'.$item->id}}>{{$item->name}}</a></h3>
-                                <div class="product-desc">
-                                    <span>{{$item->description}}</span>
-                                </div>
-                                <div class="d-flex product-button">
-                                    <a href="#" class=" demo"><span><i class="fa fa-desktop"></i> Demo</span></a>
-                                    <a href={{'/product-detail/'.$item->id}} class=" download"><span><i
-                                                class="fa fa-download"></i>
-                                            Download</span></a>
-                                    <a href="#" class=" buy" onclick="checkOut()"><span><i
-                                                class="fa fa-shopping-cart"></i> Buy</span></a>
-                                </div>
-                            </div>
-                        </div>
+                        @include('product-card')
                     </div>
                     @endforeach
 
