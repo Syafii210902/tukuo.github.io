@@ -4,6 +4,7 @@ use App\Http\Controllers\HomeController;
 use App\Http\Controllers\ProductController;
 use App\Http\Controllers\TransactionController;
 use App\Http\Controllers\UserController;
+use App\Models\Transaction;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -20,6 +21,9 @@ use Illuminate\Support\Facades\Route;
 Route::middleware(['auth:sanctum', 'verified'])->get('/', HomeController::class);
 Route::get('/', HomeController::class);
 
+Route::get('/admin', function () {
+    return view('admin.index', ['transaction' => Transaction::all()]);
+});
 
 Route::post('/seller/store', [UserController::class, 'store']);
 
@@ -35,11 +39,12 @@ Route::get('product-detail/{product:id}', [ProductController::class, 'productDet
 
 Route::get('cart', [TransactionController::class, 'cart']);
 Route::get('cart/{product:id}', [TransactionController::class, 'addToCart']);
+Route::get('cart/{transaction:id}/delete', [TransactionController::class, 'destroy']);
+Route::patch('cart/buy/{transaction:id}', [TransactionController::class, 'buy']);
 
 Route::get('checkout', function () {
     return view('checkout');
 });
-
 
 Route::get('dashboard', function () {
     return view('user.index');
@@ -53,3 +58,5 @@ Route::get('dashboard/products', function () {
 Route::get('dashboard/transactions', function () {
     return view('user.transactions');
 });
+
+Route::patch('transaction/status/{transaction:id}', [TransactionController::class, 'changeStatus']);

@@ -9,7 +9,8 @@
                 </div>
             </div>
             <div class="row mt-4">
-                @foreach (Auth::user()->transactions as $item)
+
+                @foreach (Auth::user()->transactions->where('status','1') as $item)
                 <div class="col-lg-4 col-md-6 col-12">
                     <div class="single-product">
                         <div class="product-img">
@@ -25,7 +26,9 @@
 
                             </div>
                             <div class="d-flex product-button">
-                                <a href="#" class=" demo"><span><i class="fa fa-desktop"></i> Demo</span></a>
+                                <a href='{{$item->product->link}}' target='blank' class=" demo"><span><i
+                                            class="fa fa-desktop"></i>
+                                        Demo</span></a>
                                 <a href="#" class=" download bg-green"><span><i
                                             class="fa fa-download"></i>Download</span></a>
                             </div>

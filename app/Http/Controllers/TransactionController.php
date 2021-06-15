@@ -30,4 +30,32 @@ class TransactionController extends Controller
         ]);
         return redirect('/cart/');
     }
+
+    public function buy(Request $request, Transaction $transaction)
+    {
+        // $request->validate([
+        //     'payment' => 'mimes:jpeg,png,jpg,gif,svg'
+        // ]);
+        // dd($request->payment);
+        $imgName = Auth::user()->id . '-'  . time() . '-' . $request->payment->getClientOriginalName();
+        // $transaction->update([
+        //     'payment' => '$imgName'
+        // ]);
+        $transaction->payment = $imgName;
+        $transaction->save();
+        $request->payment->move(public_path('/assets/img/payment'), $imgName);
+        return redirect('/cart/');
+    }
+
+    public function destroy(Transaction $transaction)
+    {
+        $transaction->delete();
+        return redirect('/');
+    }
+    public function changeStatus(Transaction $transaction)
+    {
+        $transaction->status = '1';
+        $transaction->save();
+        return redirect('/admin');
+    }
 }

@@ -20,7 +20,7 @@
         <div class="row">
             <div class="col-lg-12">
                 <div class="shoping__cart__table">
-                    <table>
+                    <table class="w-100 m-0">
                         <thead>
                             <tr>
                                 <th class="shoping__product">Products</th>
@@ -51,41 +51,83 @@
                                             <input type="text" value="1">
                                             <span class="inc qtybtn">+</span></div>
                                     </div>
-                                </td>
-                                <td class="shoping__cart__total">
-                                    $110.00
                                 </td> --}}
                                 <td class="shoping__cart__item__close">
-                                    <span class="icon_close"></span>
+                                    <a href="/cart/{{$item->id}}/delete">
+                                        <span class=" fa fa-trash pr-6"></span></a>
+                                </td>
+                                <td class="shoping__cart__total">
+                                    <a href="#" class="btn btn-primary" data-toggle="modal"
+                                        data-target="#exampleModal">Check Out</a>
                                 </td>
                             </tr>
+
+                            <!-- Modal -->
+                            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog"
+                                aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog" role="document">
+                                    <div class="modal-content">
+                                        <form action="/cart/buy/{{$item->id}}" method='post'
+                                            enctype="multipart/form-data">
+                                            @method('patch')
+                                            @csrf
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="exampleModalLabel">Upload Payment</h5>
+                                                <button type="button" class="close" data-dismiss="modal"
+                                                    aria-label="Close">
+                                                    <span aria-hidden="true">&times;</span>
+                                                </button>
+                                            </div>
+                                            <div class="modal-body text-center">
+                                                <div>Bayar ke rekening berikut :</div>
+                                                <h3><b>0112-322-1454555</b></h3>
+
+                                                <div class=" form-group p-6 text-center">
+                                                    <label class="form-label" for="customFile4">Upload bukti
+                                                        pembayaran</label>
+                                                    <input name="payment" type="file"
+                                                        class="form-control btn btn-outline-primary" id="customFile4" />
+                                                </div>
+
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary"
+                                                    data-dismiss="modal">Close</button>
+                                                <button type="submit" class="btn btn-primary">Save changes</button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+
                             @endforeach
                         </tbody>
                     </table>
                 </div>
             </div>
         </div>
-        <div class="row">
+        {{-- <div class="row">
             <div class="col-lg-6">
             </div>
             <div class="col-lg-6">
                 <div class="shoping__checkout">
                     <h5>Cart Total</h5>
                     <ul>
-                        {{-- <li>Subtotal <span>$454.98</span></li> --}}
+                        <li>Subtotal <span>$454.98</span></li>
                         <li>Total <span>RP. - ,00</span></li>
                     </ul>
-                    <a href="#" class="primary-btn" onclick="checkOut()">PROCEED TO CHECKOUT</a>
+                    <a href="#" class="primary-btn" data-toggle="modal" data-target="#exampleModal">PROCEED TO
+                        CHECKOUT</a>
                 </div>
             </div>
-        </div>
+        </div> --}}
     </div>
     @else
     <div class="container-fluid mt--6">
         <div class="card text-center p-5">
             <div class="text-center pb-2">
                 <h2>
-                    <i class=" fa fa-info-circle "></i> Your Cart is Empt
+                    <i class=" fa fa-info-circle "></i> Your Cart is Empty
                 </h2>
             </div>
             <p>Come on</p>
@@ -96,4 +138,6 @@
     </div>
     @endif
 </section>
+
+
 @endsection
