@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <title>IndoMarket - Free E-Commerce Website Template built with Boostrap 4 and Argon Design System</title>
+    <title>Tukuo Website</title>
 
     <!-- Fonts -->
     <link
@@ -122,9 +122,8 @@
                                 aria-expanded="true">Pages</a>
                             <div class="dropdown-menu">
                                 <a class="dropdown-item" href="/products">Products</a>
-                                <a class="dropdown-item" href="product-detail">Product Detail</a>
                                 <a class="dropdown-item" href="cart">Cart</a>
-                                <a class="dropdown-item" href="checkout">Checkout</a>
+                                {{-- <a class="dropdown-item" href="checkout">Checkout</a> --}}
                             </div>
                         </li>
                     </ul>
@@ -148,11 +147,11 @@
                             <div class="logo-footer">
                                 <i class="fa fa-shopping-bag fa-3x"></i> <span class="logo">TukuO</span>
                             </div>
-                            <p class="text">Praesent dapibus, neque id cursus ucibus, tortor neque egestas augue, magna
-                                eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor,
-                                facilisis luctus, metus.</p>
-                            <p class="call">Got Question? Call us 24/7<span><a href="tel:123456789">+0123 456
-                                        789</a></span></p>
+                            <p class="text">Website Tukuo merupakan sebuah website yang menawarkan berbagai macam
+                                template website yang dibutuhkan untuk memudahkan pembuatan website.</p>
+                            <p class="call">Got Question? Call us 24/7<span><a
+                                        href="https://wa.me/62895366053139?text=Saya%20ingin%20bertanya%20mengenai%20website%20Tukuo">+0895366053139
+                                    </a></span></p>
                         </div>
                         <!-- End Single Widget -->
                     </div>
@@ -191,10 +190,10 @@
                             <!-- Single Widget -->
                             <div class="contact">
                                 <ul>
-                                    <li>NO. 342 - London Oxford Street.</li>
-                                    <li>012 United Kingdom.</li>
-                                    <li>info@indomarket.com</li>
-                                    <li>+032 3456 7890</li>
+                                    <li>Jl. Raya ITS, Keputih, Kec. Sukolilo, Kota SBY, Jawa Timur 60111</li>
+                                    <li>Indonsesia</li>
+                                    <li>tukuowebsite@gmail.com</li>
+                                    <li>+62 895 3660 53139</li>
                                 </ul>
                             </div>
                             <!-- End Single Widget -->
@@ -216,8 +215,7 @@
                     <div class="row">
                         <div class="col-lg-6 col-12">
                             <div class="left">
-                                <p>Copyright © 2021 <a href="http://indokoding.net" target="_blank">IndoKoding.net</a> -
-                                    All Rights Reserved.</p>
+                                <p>Copyright © 2021 - All Rights Reserved.</p>
                             </div>
                         </div>
                         <div class="col-lg-6 col-12">
