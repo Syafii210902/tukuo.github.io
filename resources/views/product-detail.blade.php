@@ -63,9 +63,11 @@
             <div class="col-lg-4 col-12">
                 <div class="single-sidebar">
                     <div class="single-buttons">
-                        <a href="#" class="demo"><span><i class="fa fa-desktop"></i> Demo</span></a>
-                        <a href="#" class="download" onclick="checkOut()"><span><i class="fa fa-download"></i>
-                                Download</span></a>
+                        <a href="{{$product->link}}" target="blank" class="demo"><span><i class="fa fa-desktop"></i>
+                                Demo</span></a>
+                        <a href="/cart/{{$product->id}}" class="download bg-green">
+                            <span><i class="fa fa-download"></i>Buy</span>
+                        </a>
                     </div>
                     <div class="version-details">
                         <div class="row">
@@ -83,7 +85,8 @@
                                     <li><strong>Downloads</strong><span>{{$product->transactions->count()}}</span>
                                     </li>
                                     <li><strong>Last Update</strong><span>{{$product->created_date}}</span></li>
-                                    <li><strong>License</strong><span><a href="#">Licensing information</a></span></li>
+                                    <li><strong>License</strong><span>Licensing information</span>
+                                    </li>
                                 </ul>
                             </div>
                         </div>
