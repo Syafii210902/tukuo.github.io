@@ -80,6 +80,7 @@
                                             </div>
                                             <div class="modal-body text-center">
                                                 <div>Bayar ke rekening berikut :</div>
+                                                <div class=" text-blue">an. Admin Pens</div>
                                                 <h3><b>0112-322-1454555</b></h3>
 
                                                 <div class=" form-group p-6 text-center">

@@ -50,7 +50,7 @@ class TransactionController extends Controller
     public function destroy(Transaction $transaction)
     {
         $transaction->delete();
-        return redirect('/');
+        return redirect('/cart/');
     }
     public function changeStatus(Transaction $transaction)
     {
